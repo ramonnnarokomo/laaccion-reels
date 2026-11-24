@@ -44,7 +44,7 @@ export const Regla: React.FC = () => {
       <Rise at={110} style={{left: 80, right: 80, top: 1080, textAlign: 'center', fontFamily: SANS, fontWeight: 600, fontSize: 32, color: C.tinta}}>
         2 fijos por provincia, más Ceuta y Melilla
       </Rise>
-      <Rise at={118} style={{left: 80, right: 80, top: 1132, textAlign: 'center', fontFamily: SANS, fontSize: 24, color: C.piedra}}>
+      <Rise at={118} style={{left: 80, right: 80, top: 1132, textAlign: 'center', fontFamily: SANS, fontSize: 28, color: C.piedra}}>
         Constitución, art. 68.2 · LOREG, art. 162
       </Rise>
       <Sfx at={10} src="whoosh_soft" volume={0.5} />
@@ -109,7 +109,7 @@ export const Respuesta: React.FC = () => {
           =
         </text>
       </svg>
-      <Rise at={80} style={{left: 80, right: 80, top: 1000, textAlign: 'center', fontFamily: SANS, fontSize: 26, color: C.piedra}}>
+      <Rise at={80} style={{left: 80, right: 80, top: 1000, textAlign: 'center', fontFamily: SANS, fontSize: 28, color: C.piedra}}>
         La cámara territorial ya existe (Constitución, art. 69)
       </Rise>
       <Rise at={R2} style={{left: 80, right: 80, top: 1080, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: 60, lineHeight: 1.1}}>
@@ -182,7 +182,7 @@ export const Cierre: React.FC = () => {
     <>
       <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
         <circle cx={540} cy={700} r={420} fill="none" stroke={C.dorado} strokeWidth={1.5} opacity={0.35 * s} />
-        <circle cx={540} cy={700} r={370} fill="none" stroke={C.dorado} strokeWidth={1} strokeDasharray="3 9" opacity={0.35 * s} />
+        <circle cx={540} cy={700} r={370} fill="none" stroke={C.dorado} strokeWidth={2} strokeDasharray="4 10" opacity={0.35 * s} />
         <Rays cx={540} cy={700} r0={300} r1={330} n={120} rot={f * 0.2} op={0.25 * s} />
       </svg>
       <Img

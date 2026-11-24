@@ -27,6 +27,13 @@ Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se
 
 Estética de periódico de papel: línea fina, planos de color, rayos dorados finos, círculos finos. Como las ilustraciones de la web (`frontend/public/ilustraciones`). Nada de neones, degradados chillones ni emojis.
 
+## Para que aguante la compresión de TikTok
+
+- Grano de papel muy suave (el ruido fino se convierte en manchas al comprimir).
+- Ninguna línea de menos de 2 px; nada de rayados finos.
+- Texto pequeño (fuentes, notas) a 28 px como mínimo.
+- Exportar con CRF 14: TikTok recomprime, así que el original tiene que ir limpio.
+
 ## Zonas seguras (Instagram y TikTok)
 
 - Cabecera en y≈190. Contenido entre y=280 y y=1280.

@@ -18,12 +18,6 @@ export const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as co
 
 export const Paper: React.FC = () => (
   <AbsoluteFill style={{background: C.papel}}>
-    <AbsoluteFill
-      style={{
-        background:
-          'repeating-linear-gradient(90deg, transparent 0 359px, rgba(32,32,30,.035) 359px 360px)',
-      }}
-    />
     <Img src={staticFile('img/grano.png')} style={{position: 'absolute', inset: 0, width: 1080, height: 1920}} />
   </AbsoluteFill>
 );
@@ -299,7 +293,7 @@ export const Rays: React.FC<{cx: number; cy: number; r0: number; r1: number; n: 
           x2={cx + rr * Math.cos(a)}
           y2={cy + rr * Math.sin(a)}
           stroke={C.dorado}
-          strokeWidth={long ? 1.6 : 1}
+          strokeWidth={long ? 2.6 : 1.8}
         />
       );
     })}

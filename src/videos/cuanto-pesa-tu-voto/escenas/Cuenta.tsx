@@ -65,7 +65,7 @@ export const Soria: React.FC = () => {
       <div style={{position: 'absolute', left: 150, top: 1112, fontFamily: SANS, fontWeight: 700, fontSize: 28, color: C.burdeos, opacity: lab}}>
         Soria · 38.535
       </div>
-      <Rise at={B + 30} style={{...num, top: 1232, fontFamily: SANS, fontSize: 22, color: C.piedra}}>
+      <Rise at={B + 30} style={{...num, top: 1232, fontFamily: SANS, fontSize: 28, color: C.piedra}}>
         Fuentes: RD 806/2026 (BOE, 6/10/2026) · INE, censo del 29N
       </Rise>
       <Sfx at={B - 4} src="riser" volume={0.45} />
