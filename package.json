@@ -1,0 +1,19 @@
+{
+  "name": "laaccion-reels",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.547",
+    "@remotion/cli": "^4.0.547",
+    "@remotion/fonts": "^4.0.547",
+    "@remotion/renderer": "^4.0.547",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.547"
+  },
+  "scripts": {
+    "stills": "node render.mjs stills",
+    "video": "node render.mjs video",
+    "studio": "remotion studio --port 3000"
+  }
+}

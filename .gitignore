@@ -1,0 +1,5 @@
+node_modules/
+out/
+*.part.mp4
+voz/
+.DS_Store
