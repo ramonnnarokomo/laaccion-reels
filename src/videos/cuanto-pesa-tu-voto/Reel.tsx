@@ -1,7 +1,7 @@
 import React from 'react';
-import {AbsoluteFill, Sequence} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, staticFile} from 'remotion';
 import {loadBrandFonts} from '../../kit/brand';
-import {SCENES, SUBTITLES, type SceneId} from './timeline';
+import {SCENES, SUBTITLES, VOZ, type SceneId} from './timeline';
 import {Header, Paper, SceneIn, Sfx, Subtitles} from '../../kit/ui';
 import {Balanza} from './escenas/Balanza';
 import {Madrid, Soria} from './escenas/Cuenta';
@@ -32,6 +32,11 @@ export const Reel: React.FC = () => (
     <Escena id="propuesta"><Propuesta /></Escena>
     <Escena id="cierre"><Cierre /></Escena>
     <Subtitles items={SUBTITLES} />
+    {VOZ.map(([id, clip, delay]) => (
+      <Sequence key={clip} from={SCENES[id][0] + delay} layout="none">
+        <Audio src={staticFile(`voz/cuanto-pesa-tu-voto/${clip}.wav`)} />
+      </Sequence>
+    ))}
     {(['madrid', 'soria', 'regla', 'respuesta', 'propuesta'] as SceneId[]).map((id) => (
       <Sfx key={id} at={SCENES[id][0] - 3} src="whoosh_soft" volume={0.45} />
     ))}

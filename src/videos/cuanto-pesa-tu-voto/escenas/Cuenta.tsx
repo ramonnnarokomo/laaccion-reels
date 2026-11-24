@@ -15,16 +15,16 @@ const num: React.CSSProperties = {left: 80, right: 80, textAlign: 'center', font
 // Madrid: 38 diputados para 5.536.913 electores
 export const Madrid: React.FC = () => {
   const f = useCurrentFrame();
-  const NOTE = 188;
+  const NOTE = 214;
   const under = interpolate(f, [NOTE + 6, NOTE + 22], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   return (
     <>
       <Tag text="Haz la cuenta" delay={0} />
       <Etiqueta nombre="MADRID" sub="38 DIPUTADOS" color={C.tinta} />
-      <Dots n={38} cols={10} x0={297} y0={590} step={54} r={19} color={C.tinta} at={10} every={1.6} />
-      <Typed text="5.536.913 ÷ 38" at={78} every={2} style={{...num, top: 800, fontSize: 80, fontWeight: 400}} />
-      <Counter to={145708} from={110} until={160} style={{...num, top: 895, fontSize: 168, fontWeight: 700, lineHeight: 1}} />
-      <Rise at={162} style={{...num, top: 1078, fontFamily: SANS, fontSize: 32}}>
+      <Dots n={38} cols={10} x0={297} y0={590} step={54} r={19} color={C.tinta} at={32} every={1.2} />
+      <Typed text="5.536.913 ÷ 38" at={95} every={2} style={{...num, top: 800, fontSize: 80, fontWeight: 400}} />
+      <Counter to={145708} from={156} until={200} style={{...num, top: 895, fontSize: 168, fontWeight: 700, lineHeight: 1}} />
+      <Rise at={202} style={{...num, top: 1078, fontFamily: SANS, fontSize: 32}}>
         electores por diputado
       </Rise>
       <Rise at={NOTE} style={{...num, top: 1140, fontFamily: SANS, fontSize: 32, fontWeight: 700, color: C.burdeos}}>
@@ -41,7 +41,7 @@ export const Madrid: React.FC = () => {
 // Soria: 2 diputados para 77.069 electores, y barras comparadas
 export const Soria: React.FC = () => {
   const f = useCurrentFrame();
-  const B = 96;
+  const B = 128;
   const wM = interpolate(f, [B, B + 18], [0, 780], {...clamp, easing: Easing.out(Easing.cubic)});
   const wS = interpolate(f, [B + 8, B + 26], [0, (780 * 38535) / 145708], {...clamp, easing: Easing.out(Easing.cubic)});
   const lab = interpolate(f, [B + 10, B + 18], [0, 1], clamp);
@@ -49,10 +49,10 @@ export const Soria: React.FC = () => {
     <>
       <Tag text="Haz la cuenta" delay={0} sound={false} />
       <Etiqueta nombre="SORIA" sub="2 DIPUTADOS" color={C.burdeos} />
-      <Dots n={2} cols={2} x0={513} y0={590} step={54} r={19} color={C.burdeos} at={10} every={7} sound="pop" />
-      <Typed text="77.069 ÷ 2" at={26} every={2} style={{...num, top: 670, fontSize: 80, fontWeight: 400}} />
-      <Counter to={38535} from={50} until={84} style={{...num, top: 765, fontSize: 168, fontWeight: 700, lineHeight: 1, color: C.burdeos}} />
-      <Rise at={86} style={{...num, top: 948, fontFamily: SANS, fontSize: 32}}>
+      <Dots n={2} cols={2} x0={513} y0={590} step={54} r={19} color={C.burdeos} at={12} every={8} sound="pop" />
+      <Typed text="77.069 ÷ 2" at={34} every={2} style={{...num, top: 670, fontSize: 80, fontWeight: 400}} />
+      <Counter to={38535} from={80} until={126} style={{...num, top: 765, fontSize: 168, fontWeight: 700, lineHeight: 1, color: C.burdeos}} />
+      <Rise at={128} style={{...num, top: 948, fontFamily: SANS, fontSize: 32}}>
         electores por diputado
       </Rise>
       <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>

@@ -15,7 +15,7 @@ export const SERIF = 'Gelasio, Georgia, serif';
 export const SANS = 'Inter, system-ui, sans-serif';
 
 // Volumen general de los efectos (bajarlo cuando entre la voz)
-export const SFX_GAIN = 1;
+export const SFX_GAIN = 0.55;
 
 export const loadBrandFonts = () =>
   Promise.all([

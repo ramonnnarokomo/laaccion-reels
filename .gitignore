@@ -1,5 +1,5 @@
 node_modules/
 out/
 *.part.mp4
-voz/
+/voz/
 .DS_Store

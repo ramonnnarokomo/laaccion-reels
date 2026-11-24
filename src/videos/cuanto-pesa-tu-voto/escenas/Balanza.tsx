@@ -3,7 +3,7 @@ import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remo
 import {C, SANS, SERIF} from '../../../kit/brand';
 import {Headline, Rays, Sfx, Tag, clamp} from '../../../kit/ui';
 
-// Gancho + revelación (0–195): mismo sobre en cada platillo y Soria se hunde.
+// Gancho + revelación (0–176): mismo sobre en cada platillo y Soria se hunde.
 // Luego Madrid necesita 3,78 sobres para equilibrar.
 
 const CX = 540;
@@ -14,12 +14,12 @@ const K = 13 / 2.78; // grados por sobre de diferencia (1 sobre en Madrid = 13°
 
 const LAND0 = 16; // caen los dos primeros sobres
 const MADRID_EXTRA = [
-  {at: 122, w: 1},
-  {at: 134, w: 1},
-  {at: 146, w: 0.78},
+  {at: 115, w: 1},
+  {at: 127, w: 1},
+  {at: 139, w: 0.78},
 ];
 const BALANCED = MADRID_EXTRA[2].at + 4;
-const STAMP = 158;
+const STAMP = 151;
 
 const Sobre: React.FC<{x: number; y: number; part?: number; op?: number}> = ({x, y, part = 1, op = 1}) => {
   const w = 120;
@@ -36,7 +36,7 @@ const Sobre: React.FC<{x: number; y: number; part?: number; op?: number}> = ({x,
 };
 
 const fallY = (f: number, land: number, dur = 12) =>
-  interpolate(f, [land - dur, land], [-820, 0], {...clamp, easing: Easing.in(Easing.quad)});
+  interpolate(f, [land - dur, land], [-1250, 0], {...clamp, easing: Easing.in(Easing.quad)});
 
 export const Balanza: React.FC = () => {
   const f = useCurrentFrame();

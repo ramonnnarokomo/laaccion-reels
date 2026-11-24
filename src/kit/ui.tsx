@@ -12,7 +12,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {C, SANS, SERIF, SFX_GAIN, miles} from './brand';
-export type SubItem = {from: number; to: number; text: string};
+export type SubItem = {from: number; to: number; text: string; speakEnd?: number};
 
 export const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
@@ -204,31 +204,42 @@ export const Dots: React.FC<{
   );
 };
 
-const Emph: React.FC<{line: string}> = ({line}) => (
-  <>
-    {line.split('*').map((part, i) => (
-      <span key={i} style={{color: i % 2 ? C.burdeos : C.tinta}}>
-        {part}
-      </span>
-    ))}
-  </>
-);
+// Peso hablado de una palabra (sílabas aprox.; las cifras se leen largas)
+const peso = (w: string) => {
+  const d = (w.match(/[0-9]/g) || []).length;
+  if (d) return Math.max(2, d * 1.4);
+  return Math.max(1, (w.toLowerCase().match(/[aeiouáéíóúü]+/g) || []).length);
+};
 
+// Subtítulos palabra a palabra: cada palabra entra cuando se dice (reparto por sílabas
+// entre `from` y `speakEnd`); "/" separa líneas y *texto* va en burdeos.
 export const Subtitles: React.FC<{items: SubItem[]}> = ({items}) => {
   const f = useCurrentFrame();
   const cur = items.find((it) => f >= it.from && f < it.to);
   if (!cur) return null;
-  const local = f - cur.from;
-  const s = interpolate(local, [0, 4], [0.92, 1], {...clamp, easing: Easing.out(Easing.back(2))});
-  const o = interpolate(local, [0, 2], [0, 1], clamp);
-  // Repartimos el énfasis por líneas sin romper los asteriscos
-  let open = false;
-  const lines = cur.text.split('/').map((l) => {
-    const fixed = (open ? '*' : '') + l.trim();
-    const count = (l.match(/\*/g) || []).length;
-    if (count % 2 === 1) open = !open;
-    return fixed;
+  const end = cur.speakEnd ?? cur.to;
+  type W = {w: string; em: boolean; line: number};
+  const words: W[] = [];
+  let em = false;
+  cur.text.split('/').forEach((line, li) => {
+    line.trim().split(/\s+/).forEach((raw) => {
+      let w = raw;
+      const starts = w.startsWith('*');
+      if (starts) { em = true; w = w.slice(1); }
+      const ends = w.endsWith('*') || /\*[.,:?!]$/.test(w);
+      w = w.replace(/\*/g, '');
+      words.push({w, em, line: li});
+      if (ends) em = false;
+    });
   });
+  const total = words.reduce((a, x) => a + peso(x.w), 0);
+  let acc = 0;
+  const times = words.map((x) => {
+    const t = cur.from + ((end - cur.from) * acc) / total;
+    acc += peso(x.w);
+    return t;
+  });
+  const lines = Array.from(new Set(words.map((x) => x.line)));
   return (
     <div
       style={{
@@ -242,13 +253,24 @@ export const Subtitles: React.FC<{items: SubItem[]}> = ({items}) => {
         fontSize: 54,
         lineHeight: 1.2,
         letterSpacing: '-0.005em',
-        transform: `scale(${s})`,
-        opacity: o,
       }}
     >
-      {lines.map((l, i) => (
-        <div key={i}>
-          <Emph line={l} />
+      {lines.map((li) => (
+        <div key={li}>
+          {words.map((x, i) => {
+            if (x.line !== li) return null;
+            const k = f - times[i];
+            const o = interpolate(k, [0, 2], [0, 1], clamp);
+            const sc = interpolate(k, [0, 4], [0.7, 1], {...clamp, easing: Easing.out(Easing.back(2.2))});
+            return (
+              <span
+                key={i}
+                style={{display: 'inline-block', marginRight: '0.26em', opacity: o, transform: `scale(${sc})`, color: x.em ? C.burdeos : C.tinta}}
+              >
+                {x.w}
+              </span>
+            );
+          })}
         </div>
       ))}
     </div>

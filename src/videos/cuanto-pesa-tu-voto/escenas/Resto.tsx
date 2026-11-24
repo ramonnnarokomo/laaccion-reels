@@ -57,7 +57,7 @@ export const Regla: React.FC = () => {
 export const Discrepan: React.FC = () => {
   const f = useCurrentFrame();
   const words = 'Sin ese mínimo, la España vaciada no pintaría nada.'.split(' ');
-  const W0 = 20;
+  const W0 = 42;
   return (
     <>
       <Tag text="Lo que dicen quienes discrepan" delay={2} />
@@ -69,7 +69,7 @@ export const Discrepan: React.FC = () => {
       <Bocadillo x={150} y={430} w={830} h={430} tx={330} ty={950} at={12}>
         <div style={{fontFamily: SERIF, fontStyle: 'italic', fontWeight: 600, fontSize: 76, lineHeight: 1.14, color: C.tinta}}>
           {words.map((w, i) => (
-            <span key={i} style={{opacity: f >= W0 + i * 3 ? 1 : 0}}>
+            <span key={i} style={{opacity: f >= W0 + i * 8.5 ? 1 : 0}}>
               {w}{' '}
             </span>
           ))}
@@ -78,7 +78,7 @@ export const Discrepan: React.FC = () => {
       <Sfx at={4} src="pop" volume={0.5} />
       <Sfx at={12} src="paper" volume={0.6} />
       {words.map((_, i) => (
-        <Sfx key={i} at={W0 + i * 3} src="key" volume={0.45} dur={6} />
+        <Sfx key={i} at={W0 + i * 8.5} src="key" volume={0.45} dur={6} />
       ))}
     </>
   );
@@ -87,39 +87,39 @@ export const Discrepan: React.FC = () => {
 // ---------- Nuestra respuesta: el Senado ----------
 export const Respuesta: React.FC = () => {
   const f = useCurrentFrame();
-  const R2 = 118;
+  const R2 = 104;
   return (
     <>
       <Tag text="Nuestra respuesta" delay={0} />
       <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
         <Edificio x={540} y={640} w={420} label="SENADO" at={6} />
         {[0, 1, 2, 3].map((i) => (
-          <Monigote key={`s${i}`} x={170 + i * 58} y={900} h={120} color={C.burdeos} at={24 + i * 6} bob={false} />
+          <Monigote key={`s${i}`} x={170 + i * 58} y={900} h={120} color={C.burdeos} at={42 + i * 6} bob={false} />
         ))}
         {[0, 1, 2, 3].map((i) => (
-          <Monigote key={`m${i}`} x={736 + i * 58} y={900} h={120} color={C.tinta} at={27 + i * 6} bob={false} />
+          <Monigote key={`m${i}`} x={736 + i * 58} y={900} h={120} color={C.tinta} at={45 + i * 6} bob={false} />
         ))}
-        <text x={257} y={960} textAnchor="middle" fontFamily={SANS} fontWeight={700} fontSize={30} letterSpacing={5} fill={C.burdeos} opacity={f > 24 ? 1 : 0}>
+        <text x={257} y={960} textAnchor="middle" fontFamily={SANS} fontWeight={700} fontSize={30} letterSpacing={5} fill={C.burdeos} opacity={f > 42 ? 1 : 0}>
           SORIA · 4
         </text>
-        <text x={823} y={960} textAnchor="middle" fontFamily={SANS} fontWeight={700} fontSize={30} letterSpacing={5} fill={C.tinta} opacity={f > 27 ? 1 : 0}>
+        <text x={823} y={960} textAnchor="middle" fontFamily={SANS} fontWeight={700} fontSize={30} letterSpacing={5} fill={C.tinta} opacity={f > 45 ? 1 : 0}>
           MADRID · 4
         </text>
-        <text x={540} y={888} textAnchor="middle" fontFamily={SERIF} fontWeight={700} fontSize={90} fill={C.dorado} opacity={interpolate(f, [52, 58], [0, 1], clamp)}>
+        <text x={540} y={888} textAnchor="middle" fontFamily={SERIF} fontWeight={700} fontSize={90} fill={C.dorado} opacity={interpolate(f, [66, 72], [0, 1], clamp)}>
           =
         </text>
       </svg>
-      <Rise at={60} style={{left: 80, right: 80, top: 1000, textAlign: 'center', fontFamily: SANS, fontSize: 26, color: C.piedra}}>
+      <Rise at={80} style={{left: 80, right: 80, top: 1000, textAlign: 'center', fontFamily: SANS, fontSize: 26, color: C.piedra}}>
         La cámara territorial ya existe (Constitución, art. 69)
       </Rise>
       <Rise at={R2} style={{left: 80, right: 80, top: 1080, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: 60, lineHeight: 1.1}}>
         En el Congreso, <span style={{color: C.burdeos, fontStyle: 'italic'}}>cada persona igual.</span>
       </Rise>
       {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
-        <Sfx key={i} at={(i % 2 ? 27 : 24) + Math.floor(i / 2) * 6} src="pop" volume={0.45} dur={8} />
+        <Sfx key={i} at={(i % 2 ? 45 : 42) + Math.floor(i / 2) * 6} src="pop" volume={0.45} dur={8} />
       ))}
       <Sfx at={6} src="whoosh_soft" volume={0.4} />
-      <Sfx at={54} src="ding" volume={0.5} />
+      <Sfx at={72} src="ding" volume={0.5} />
       <Sfx at={R2} src="whoosh" volume={0.5} />
     </>
   );
@@ -136,7 +136,7 @@ export const Propuesta: React.FC = () => {
       return `${(x + R * Math.cos(a)).toFixed(1)},${(y + R * Math.sin(a)).toFixed(1)}`;
     }).join(' ');
   const HI = 15;
-  const hl = interpolate(f, [62, 70], [0, 1], clamp);
+  const hl = interpolate(f, [96, 104], [0, 1], clamp);
   return (
     <>
       <Tag text="Qué proponemos" delay={0} />
@@ -153,20 +153,21 @@ export const Propuesta: React.FC = () => {
           );
         })}
       </svg>
-      <Rise at={40} style={{left: 80, right: 80, top: 960, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: 58, lineHeight: 1.18}}>
+      <Rise at={20} style={{left: 80, right: 80, top: 960, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: 58, lineHeight: 1.18}}>
         Distritos de igual población.
       </Rise>
-      <Rise at={52} style={{left: 80, right: 80, top: 1030, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: 58, lineHeight: 1.18}}>
+      <Rise at={68} style={{left: 80, right: 80, top: 1030, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: 58, lineHeight: 1.18}}>
         Un diputado cada uno.
       </Rise>
-      <Rise at={64} style={{left: 80, right: 80, top: 1100, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontStyle: 'italic', fontSize: 58, lineHeight: 1.18, color: C.burdeos}}>
+      <Rise at={96} style={{left: 80, right: 80, top: 1100, textAlign: 'center', fontFamily: SERIF, fontWeight: 700, fontStyle: 'italic', fontSize: 58, lineHeight: 1.18, color: C.burdeos}}>
         Que responda ante ti.
       </Rise>
       {cells.filter((c) => c.i % 3 === 0).map((c) => (
         <Sfx key={c.i} at={8 + c.i * 1.1} src="tick" volume={0.4} dur={5} />
       ))}
-      <Sfx at={40} src="whoosh_soft" volume={0.4} />
-      <Sfx at={64} src="ding" volume={0.45} />
+      <Sfx at={20} src="whoosh_soft" volume={0.4} />
+      <Sfx at={68} src="whoosh_soft" volume={0.35} />
+      <Sfx at={96} src="ding" volume={0.45} />
     </>
   );
 };
@@ -176,7 +177,7 @@ export const Cierre: React.FC = () => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = spring({frame: f, fps, config: {damping: 14, stiffness: 120}});
-  const url = spring({frame: f - 32, fps, config: {damping: 10, stiffness: 220}});
+  const url = spring({frame: f - 38, fps, config: {damping: 10, stiffness: 220}});
   return (
     <>
       <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
@@ -204,15 +205,15 @@ export const Cierre: React.FC = () => {
           fontSize: 70,
           letterSpacing: '.01em',
           color: C.burdeos,
-          opacity: f >= 32 ? 1 : 0,
+          opacity: f >= 38 ? 1 : 0,
           transform: `scale(${interpolate(url, [0, 1], [1.4, 1])})`,
         }}
       >
         laaccion.com
       </div>
       <Sfx at={0} src="whoosh" volume={0.5} />
-      <Sfx at={32} src="stamp" volume={0.6} />
-      <Sfx at={36} src="ding" volume={0.55} />
+      <Sfx at={38} src="stamp" volume={0.6} />
+      <Sfx at={42} src="ding" volume={0.55} />
     </>
   );
 };
