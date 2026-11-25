@@ -71,6 +71,8 @@ Estética de periódico de papel: línea fina, planos de color, rayos dorados fi
 - Ninguna línea de menos de 2 px; nada de rayados finos.
 - Texto pequeño (fuentes, notas) a 28 px como mínimo.
 - Exportar con CRF 14: TikTok recomprime, así que el original tiene que ir limpio.
+- Vídeo final en **yuv420p, rango normal (tv) y BT.709**, etiquetado, con `+faststart`. El render ya sale así (`render.mjs`). Si un archivo sale en `yuvj420p`/rango completo, convertirlo antes de entregar: algunos móviles y plataformas leen mal el color.
+- Comprobado el 25/11/2026: recomprimido a 1,2 Mbps (como en TikTok), el texto de 24–26 px de las fichas se sigue leyendo bien con nuestros colores planos.
 
 ## Zonas seguras (Instagram y TikTok)
 

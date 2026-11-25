@@ -19,7 +19,7 @@ if (mode === 'stills') {
   const tmp = arg.replace(/\.mp4$/, '.part.mp4');
   let last = -1;
   await renderMedia({
-    serveUrl, composition, codec: 'h264', crf: 14, x264Preset: 'veryfast', outputLocation: tmp, concurrency: 2, ...browser,
+    serveUrl, composition, codec: 'h264', crf: 14, x264Preset: 'veryfast', pixelFormat: 'yuv420p', colorSpace: 'bt709', outputLocation: tmp, concurrency: 2, ...browser,
     onProgress: ({progress}) => { const p = Math.floor(progress * 10); if (p !== last) { last = p; console.log(`${p * 10}%`); } },
   });
   fs.renameSync(tmp, arg);
