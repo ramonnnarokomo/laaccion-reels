@@ -85,7 +85,7 @@ Si un efecto suena pobre se puede cambiar por uno CC0 (Kenney, Freesound filtrad
 1. Ramón grabó una vez una muestra limpia de 15–30 s (`voz/muestra-ramon.wav`, fuera del repo si prefiere).
 2. Para cada vídeo, Claude le da el texto en bloques de ≤ 280 caracteres, números escritos en letra.
 3. Ramón lo genera en la demo de Chatterbox es-es (https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-es-es) con su muestra y adjunta los audios.
-4. Claude: normaliza (ffmpeg `loudnorm=I=-14:TP=-1.5`), corta por silencios (`silencedetect`), ajusta `timeline.ts` a las duraciones reales y baja `SFX_GAIN` a ~0,6.
+4. Claude: pasa cada bloque por `tools/voz.sh` (paso alto, menos barro en 150–400 Hz, presencia en 2–3 kHz, aire, compresión, de-esser, limitador y −14 LUFS; **sin reverb**), corta por silencios (`silencedetect`), ajusta `timeline.ts` a las duraciones reales y deja `SFX_GAIN` en ~0,55.
 5. Al publicar: etiqueta de IA activada y «Voz generada con IA a partir de la voz de Ramón» en el texto.
 
 ## Reglas que no se negocian
