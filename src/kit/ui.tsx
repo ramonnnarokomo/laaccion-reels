@@ -60,7 +60,7 @@ export const Header: React.FC = () => (
 );
 
 // Etiqueta que dice qué es cada escena (dato, regla, objeción...). Entra como un sello.
-export const Tag: React.FC<{text: string; delay?: number; sound?: boolean}> = ({text, delay = 0, sound = true}) => {
+export const Tag: React.FC<{text: string; delay?: number; sound?: boolean; top?: number}> = ({text, delay = 0, sound = true, top = 290}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = spring({frame: f - delay, fps, config: {damping: 11, stiffness: 220}});
@@ -69,7 +69,7 @@ export const Tag: React.FC<{text: string; delay?: number; sound?: boolean}> = ({
       <div
         style={{
           position: 'absolute',
-          top: 290,
+          top,
           left: 100,
           fontFamily: SANS,
           fontWeight: 700,

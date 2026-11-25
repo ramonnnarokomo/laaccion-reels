@@ -10,7 +10,7 @@ Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se
 - Voz: clon de la voz de Ramón (Chatterbox es-es). Subtítulos grabados, palabra clave en burdeos.
 - Efectos de sonido en cada aparición. **Sin música.**
 - Cada escena lleva su etiqueta: DATO · HAZ LA CUENTA · LA REGLA · LO QUE DICEN QUIENES DISCREPAN · NUESTRA RESPUESTA · QUÉ PROPONEMOS. Así se ve qué es hecho y qué es posición.
-- Cierre: logo + pregunta + laaccion.com.
+- Cierre: logo + pregunta + laaccion.com. En **bastantes vídeos (no en todos)**, con `OutroSol`: el sol del logo girando, bien visible. Le gustó a Ramón en el piloto, pero lo quería más visible.
 
 ## Retención (lo que pide Ramón: la retención es la clave)
 
@@ -88,6 +88,7 @@ Estética de periódico de papel: línea fina, planos de color, rayos dorados fi
 | `Rays`, `Headline` | Rayos del sol del logo, titulares |
 | `Monigote`, `Multitud`, `Bocadillo`, `Edificio`, `Comillas` | Personajes y objetos |
 | `Sfx` | Un efecto en un fotograma |
+| `mundo.tsx`: `Persona`, `Sala`, `Halo`, `Ficha`, `Sello`, `Camara`, `Fundido`, `Pop`, `SubtitulosArriba`, `OutroSol` | Personajes con cara y emociones, escenarios, fichas de fuente, sellos, cámara con fotogramas clave, subtítulos arriba y el cierre con el sol del logo girando |
 
 ### Monigotes
 
