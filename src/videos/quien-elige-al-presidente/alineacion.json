@@ -1,0 +1,212 @@
+{
+ "01-gancho": {
+  "dur": 10.94,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.81,
+    "text": "Votamos el veintitrés de julio..."
+   },
+   {
+    "from": 2.23,
+    "to": 6.27,
+    "text": "Y hasta ciento dieciséis días después, no hubo presidente elegido."
+   },
+   {
+    "from": 6.57,
+    "to": 7.2,
+    "text": "¿Qué pasó?"
+   },
+   {
+    "from": 7.37,
+    "to": 9.84,
+    "text": "Y ojo, que una vez casi votamos..."
+   },
+   {
+    "from": 10.0,
+    "to": 10.84,
+    "text": "en Navidad."
+   }
+  ]
+ },
+ "02-intento": {
+  "dur": 11.61,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.67,
+    "text": "Primero, el candidato del partido más votado."
+   },
+   {
+    "from": 2.86,
+    "to": 4.9,
+    "text": "Necesitaba ciento setenta y seis..."
+   },
+   {
+    "from": 5.29,
+    "to": 7.13,
+    "text": "sacó ciento setenta y dos."
+   },
+   {
+    "from": 7.43,
+    "to": 8.04,
+    "text": "Repesca:"
+   },
+   {
+    "from": 8.2,
+    "to": 10.52,
+    "text": "le bastaba con más síes que noes."
+   },
+   {
+    "from": 10.82,
+    "to": 11.51,
+    "text": "TAMPOCO."
+   }
+  ]
+ },
+ "03-reloj": {
+  "dur": 8.96,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.94,
+    "text": "Arranca un reloj:"
+   },
+   {
+    "from": 1.18,
+    "to": 1.96,
+    "text": "dos meses,"
+   },
+   {
+    "from": 2.12,
+    "to": 3.26,
+    "text": "o elecciones otra vez."
+   },
+   {
+    "from": 3.56,
+    "to": 4.73,
+    "text": "El dieciséis de noviembre,"
+   },
+   {
+    "from": 4.89,
+    "to": 7.17,
+    "text": "otro candidato suma ciento setenta y nueve."
+   },
+   {
+    "from": 7.47,
+    "to": 8.86,
+    "text": "Quedaban once días."
+   }
+  ]
+ },
+ "04-navidad": {
+  "dur": 10.52,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.77,
+    "text": "¿Lo de Navidad?"
+   },
+   {
+    "from": 1.07,
+    "to": 4.32,
+    "text": "En dos mil dieciséis, el reloj acababa el treinta y uno de octubre."
+   },
+   {
+    "from": 4.6,
+    "to": 5.18,
+    "text": "Si no,"
+   },
+   {
+    "from": 5.38,
+    "to": 7.13,
+    "text": "urnas el veinticinco de diciembre."
+   },
+   {
+    "from": 7.43,
+    "to": 8.16,
+    "text": "Investidura..."
+   },
+   {
+    "from": 8.37,
+    "to": 9.16,
+    "text": "el veintinueve."
+   },
+   {
+    "from": 9.43,
+    "to": 10.42,
+    "text": "Por DOS días."
+   }
+  ]
+ },
+ "05-regla": {
+  "dur": 10.03,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.09,
+    "text": "¿Y por qué pasa esto?"
+   },
+   {
+    "from": 1.39,
+    "to": 6.26,
+    "text": "Porque al presidente no lo eligen las urnas: lo votan trescientos cincuenta diputados."
+   },
+   {
+    "from": 6.56,
+    "to": 7.97,
+    "text": "Tú eliges quién se sienta."
+   },
+   {
+    "from": 8.27,
+    "to": 8.8,
+    "text": "Ellos,"
+   },
+   {
+    "from": 9.04,
+    "to": 9.93,
+    "text": "quién gobierna."
+   }
+  ]
+ },
+ "06-discrepan": {
+  "dur": 3.5,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.4,
+    "text": "Quien defiende el sistema dice que obliga a pactar, como en Alemania."
+   }
+  ]
+ },
+ "07-propuesta": {
+  "dur": 4.27,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 4.17,
+    "text": "Nosotros proponemos votar al presidente aparte... y que el Congreso lo controle."
+   }
+  ]
+ },
+ "08-cierre": {
+  "dur": 3.95,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.84,
+    "text": "¿Tú qué prefieres?"
+   },
+   {
+    "from": 1.13,
+    "to": 2.47,
+    "text": "Vota en la acción punto com,"
+   },
+   {
+    "from": 2.63,
+    "to": 3.85,
+    "text": "y dínoslo en comentarios."
+   }
+  ]
+ }
+}
