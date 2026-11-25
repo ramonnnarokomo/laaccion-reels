@@ -556,34 +556,29 @@ export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lin
 };
 
 // ---------- Cierre con el sol del logo girando (gustó en el piloto; usar en bastantes vídeos, no en todos) ----------
-export const OutroSol: React.FC<{cx?: number; cy?: number; r?: number; logoW?: number; at?: number}> = ({cx = 540, cy = 720, r = 270, logoW = 540, at = 0}) => {
+// Versión simple (25/11/2026, a petición de Ramón): un solo aro de rayos girando, grande, y el logo muy grande delante.
+export const OutroSol: React.FC<{cx?: number; cy?: number; r?: number; logoW?: number; at?: number}> = ({cx = 540, cy = 800, r = 330, logoW = 860, at = 0}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = f - at;
   if (t < 0) return null;
   const s = spring({frame: t, fps, config: {damping: 14, stiffness: 120}});
-  const n = 72;
-  const rot = t * 0.35;
+  const n = 96;
+  const rot = t * 0.3;
   return (
     <>
-      <div style={{position: 'absolute', left: cx - r * 1.5, top: cy - r * 1.5, width: r * 3, height: r * 3, borderRadius: '50%', background: `radial-gradient(circle, rgba(165,140,97,0.30) 0%, rgba(165,140,97,0) 62%)`, opacity: s}} />
       <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
-        <g transform={`translate(${cx} ${cy}) scale(${interpolate(s, [0, 1], [0.7, 1])})`} opacity={s}>
-          <g transform={`rotate(${rot})`}>
-            {Array.from({length: n}).map((_, i) => {
-              const a = (i / n) * Math.PI * 2;
-              const largo = i % 2 === 0;
-              const r0 = r * 0.8;
-              const r1 = largo ? r : r * 0.92;
-              return <line key={i} x1={r0 * Math.cos(a)} y1={r0 * Math.sin(a)} x2={r1 * Math.cos(a)} y2={r1 * Math.sin(a)} stroke={C.dorado} strokeWidth={largo ? 4.5 : 3} strokeLinecap="round" opacity={0.85} />;
-            })}
-          </g>
-          <circle r={r * 1.1} fill="none" stroke={C.dorado} strokeWidth={3.5} strokeDasharray="6 14" transform={`rotate(${-rot * 0.6})`} opacity={0.75} />
-          <circle r={r * 1.22} fill="none" stroke={C.dorado} strokeWidth={2.5} opacity={0.5} />
-          <circle r={r * 0.74} fill="#FAF7F1" opacity={0.92} />
+        <g transform={`translate(${cx} ${cy}) scale(${interpolate(s, [0, 1], [0.75, 1])}) rotate(${rot})`} opacity={s}>
+          {Array.from({length: n}).map((_, i) => {
+            const a = (i / n) * Math.PI * 2;
+            const largo = i % 2 === 0;
+            const r0 = r * 0.84;
+            const r1 = largo ? r : r * 0.93;
+            return <line key={i} x1={r0 * Math.cos(a)} y1={r0 * Math.sin(a)} x2={r1 * Math.cos(a)} y2={r1 * Math.sin(a)} stroke={C.dorado} strokeWidth={largo ? 4.5 : 3} strokeLinecap="round" opacity={0.8} />;
+          })}
         </g>
       </svg>
-      <Img src={staticFile('img/logo.png')} style={{position: 'absolute', left: cx - logoW / 2, top: cy - logoW / 6, width: logoW, opacity: interpolate(t, [4, 12], [0, 1], clamp), transform: `scale(${interpolate(s, [0, 1], [0.9, 1])})`}} />
+      <Img src={staticFile('img/logo.png')} style={{position: 'absolute', left: cx - logoW / 2, top: cy - logoW / 6, width: logoW, opacity: interpolate(t, [3, 10], [0, 1], clamp), transform: `scale(${interpolate(s, [0, 1], [0.92, 1])})`}} />
     </>
   );
 };
@@ -635,3 +630,8 @@ export const Siglas: React.FC<{p: Sigla; size?: number; caja?: boolean; at?: num
     </span>
   );
 };
+
+// Franja de papel bajo la cabecera y los subtítulos: que la escena (y la cámara) nunca se meta debajo
+export const FranjaSuperior: React.FC<{alto?: number}> = ({alto = 440}) => (
+  <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: alto + 50, background: `linear-gradient(to bottom, ${C.papel} 0px, ${C.papel} ${alto}px, rgba(250,247,241,0) ${alto + 50}px)`}} />
+);

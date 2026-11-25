@@ -1,0 +1,172 @@
+{
+ "01-gancho": {
+  "dur": 8.09,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.1,
+    "text": "¿Tu voto vale lo mismo que el de cualquier otro?"
+   },
+   {
+    "from": 2.34,
+    "to": 6.15,
+    "text": "Pues hay una provincia donde pesa más de CUATRO veces que en Madrid."
+   },
+   {
+    "from": 6.31,
+    "to": 6.52,
+    "text": "Y no..."
+   },
+   {
+    "from": 6.68,
+    "to": 7.99,
+    "text": "no es Soria."
+   }
+  ]
+ },
+ "02-madrid": {
+  "dur": 7.55,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.71,
+    "text": "Haz la cuenta."
+   },
+   {
+    "from": 0.88,
+    "to": 5.09,
+    "text": "Madrid elige treinta y ocho diputados con cinco millones y medio de electores."
+   },
+   {
+    "from": 5.25,
+    "to": 7.45,
+    "text": "Uno por cada ciento cuarenta y seis mil."
+   }
+  ]
+ },
+ "03-teruel": {
+  "dur": 6.93,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.25,
+    "text": "¿Y la provincia misteriosa?"
+   },
+   {
+    "from": 1.55,
+    "to": 1.94,
+    "text": "Teruel."
+   },
+   {
+    "from": 2.24,
+    "to": 4.83,
+    "text": "Tres diputados para ciento seis mil electores."
+   },
+   {
+    "from": 5.13,
+    "to": 6.83,
+    "text": "Uno por cada treinta y cinco mil."
+   }
+  ]
+ },
+ "04-regla": {
+  "dur": 13.3,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.41,
+    "text": "¿Por qué?"
+   },
+   {
+    "from": 0.71,
+    "to": 1.45,
+    "text": "No es un fallo."
+   },
+   {
+    "from": 1.75,
+    "to": 2.28,
+    "text": "Es la ley:"
+   },
+   {
+    "from": 2.58,
+    "to": 6.32,
+    "text": "cada provincia tiene DOS diputados garantizados, viva quien viva allí."
+   },
+   {
+    "from": 6.62,
+    "to": 10.29,
+    "text": "Ciento dos escaños se reparten antes de contar a una sola persona."
+   },
+   {
+    "from": 10.59,
+    "to": 11.04,
+    "text": "Y Madrid..."
+   },
+   {
+    "from": 11.45,
+    "to": 13.2,
+    "text": "es la última de las cincuenta y dos."
+   }
+  ]
+ },
+ "05-discrepan": {
+  "dur": 9.33,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 4.31,
+    "text": "Quien lo defiende dice que, sin ese mínimo, la España vaciada no pintaría nada."
+   },
+   {
+    "from": 4.61,
+    "to": 5.68,
+    "text": "Y tiene parte de razón."
+   },
+   {
+    "from": 5.98,
+    "to": 7.44,
+    "text": "Pero para eso ya está el Senado:"
+   },
+   {
+    "from": 7.73,
+    "to": 9.23,
+    "text": "cuatro senadores por provincia."
+   }
+  ]
+ },
+ "06-propuesta": {
+  "dur": 7.0,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.12,
+    "text": "Por eso proponemos que en el Congreso cada persona pese igual:"
+   },
+   {
+    "from": 3.42,
+    "to": 6.9,
+    "text": "distritos con la misma población... y un diputado que responda ante ti."
+   }
+  ]
+ },
+ "07-cierre": {
+  "dur": 4.92,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.56,
+    "text": "¿Cuánto pesa el voto en tu provincia?"
+   },
+   {
+    "from": 1.86,
+    "to": 3.19,
+    "text": "Pregúntanoslo en comentarios."
+   },
+   {
+    "from": 3.49,
+    "to": 4.82,
+    "text": "Y mándaselo a alguien de Teruel."
+   }
+  ]
+ }
+}
