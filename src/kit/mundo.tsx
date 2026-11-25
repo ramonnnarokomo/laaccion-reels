@@ -587,3 +587,51 @@ export const OutroSol: React.FC<{cx?: number; cy?: number; r?: number; logoW?: n
     </>
   );
 };
+
+// ---------- Partidos: siglas en negrita y en su color (sin logotipos) ----------
+// Colores aproximados de la identidad pública de cada partido: contrastar con su web antes de un vídeo en el que importe el tono exacto.
+export const PARTIDOS = {
+  PP: '#1A73C8',
+  PSOE: '#E1061A',
+  VOX: '#63BE21',
+  SUMAR: '#E51C55',
+  PODEMOS: '#6A2E73',
+  SALF: '#B0122B',
+  ERC: '#F2A900',
+  JUNTS: '#20C0B0',
+  PNV: '#008B3A',
+  BILDU: '#A3C940',
+  BNG: '#76B4DF',
+  CC: '#F7D117',
+  UPN: '#1F4E8C',
+} as const;
+export type Sigla = keyof typeof PARTIDOS;
+
+// «PP» grande, en negrita y en su color; con `caja` va en blanco sobre su color
+export const Siglas: React.FC<{p: Sigla; size?: number; caja?: boolean; at?: number; style?: React.CSSProperties; texto?: string}> = ({p, size = 120, caja, at = 0, style, texto}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  if (f < at) return null;
+  const s = spring({frame: f - at, fps, config: {damping: 11, stiffness: 220}});
+  const col = PARTIDOS[p];
+  return (
+    <span
+      style={{
+        display: 'inline-block',
+        fontFamily: SANS,
+        fontWeight: 900,
+        fontSize: size,
+        letterSpacing: '-0.01em',
+        lineHeight: 1,
+        color: caja ? '#FFFFFF' : col,
+        background: caja ? col : 'transparent',
+        padding: caja ? `${size * 0.12}px ${size * 0.22}px` : 0,
+        borderRadius: caja ? size * 0.12 : 0,
+        transform: `scale(${s})`,
+        ...style,
+      }}
+    >
+      {texto ?? p}
+    </span>
+  );
+};
