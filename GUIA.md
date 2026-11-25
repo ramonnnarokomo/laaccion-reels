@@ -74,7 +74,7 @@ Estética de periódico de papel: línea fina, planos de color, rayos dorados fi
 
 ## Zonas seguras (Instagram y TikTok)
 
-- Cabecera en y≈138 (desde el 26/11; antes 190), lejos de los subtítulos (arriba, en y≈336). Etiquetas de escena en y≈446, fijas, fuera de la cámara. Contenido entre y=480 y y=1340. Fichas de fuente en y≈1372, fijas.
+- Cabecera en y≈138 (desde el 25/11/2026, después de «¿Quién elige al presidente?»; antes 190), lejos de los subtítulos (arriba, en y≈336). Etiquetas de escena en y≈446, fijas, fuera de la cámara. Contenido entre y=480 y y=1340. Fichas de fuente en y≈1372, fijas.
 - Subtítulos entre y=1335 y y≈1480.
 - Debajo de y=1500 y a la derecha de x=930 en la mitad inferior tapan los botones y el texto: nada importante ahí.
 
