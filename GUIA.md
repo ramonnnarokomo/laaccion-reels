@@ -143,6 +143,14 @@ Si un efecto suena pobre se puede cambiar por uno CC0 (Kenney, Freesound filtrad
 - Nada de música, clips o imágenes con derechos. Ni copiar frases, metáforas o estructura de otras cuentas.
 - Semana electoral: sin sondeos los 5 días previos (LOREG 69.7) y nada de campaña el día de reflexión (art. 53).
 
+## Modo transgresor (solo cuando Ramón lo pida)
+
+Más polémica, sin miedo, defendiendo siempre la línea de La Acción y lo que es real.
+- **Gancho que choca de frente** con algo que la gente da por hecho, o con lo que dice alguien con poder («Te dicen que… Es falso.»).
+- **Nombres y apellidos** de partidos y cargos (siglas en su color, rótulo con el cargo), con **sus frases textuales y su ficha de fuente**: la polémica sale de ponerles delante sus propias palabras y los datos.
+- **Posición sin rodeos** en «Qué proponemos» / «Nuestra respuesta», marcada como posición.
+- **Lo que no cambia:** cada afirmación verificable y con fuente; nada inventado, ni insultos, ni acusar de delitos sin sentencia, ni llamar a la violencia; la misma vara para todos los partidos; y las reglas electorales (sondeos, jornada de reflexión). Es justo lo que hace que la polémica no se pueda tumbar ni la quite TikTok del «Para ti».
+
 ## Actualidad
 
 Ramón quiere estar atento a la actualidad («al mercado») y sacar vídeos de lo que afecte o interese a la gente: buscar la noticia, comprobar los datos en la fuente original y proponer el ángulo de La Acción.
