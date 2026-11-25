@@ -10,7 +10,7 @@ Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se
 - Voz: clon de la voz de Ramón (Chatterbox es-es). Subtítulos grabados, palabra clave en burdeos.
 - Efectos de sonido en cada aparición. **Sin música.**
 - Cada escena lleva su etiqueta: DATO · HAZ LA CUENTA · LA REGLA · LO QUE DICEN QUIENES DISCREPAN · NUESTRA RESPUESTA · QUÉ PROPONEMOS. Así se ve qué es hecho y qué es posición.
-- Cierre: logo + pregunta + laaccion.com. En **bastantes vídeos (no en todos)**, con `OutroSol`: el sol del logo girando, bien visible. Le gustó a Ramón en el piloto, pero lo quería más visible.
+- Cierre: logo + pregunta + laaccion.com. En **bastantes vídeos (no en todos)**, con `OutroSol`: el sol del logo girando, bien visible y con el **logo grande** (por defecto, 540 px de ancho). Le gustó a Ramón en el piloto, pero lo quería más visible.
 
 ## Retención (lo que pide Ramón: la retención es la clave)
 
@@ -74,7 +74,7 @@ Estética de periódico de papel: línea fina, planos de color, rayos dorados fi
 
 ## Zonas seguras (Instagram y TikTok)
 
-- Cabecera en y≈190. Contenido entre y=280 y y=1280.
+- Cabecera en y≈138 (desde el 26/11; antes 190), lejos de los subtítulos (arriba, en y≈336). Etiquetas de escena en y≈446, fijas, fuera de la cámara. Contenido entre y=480 y y=1340. Fichas de fuente en y≈1372, fijas.
 - Subtítulos entre y=1335 y y≈1480.
 - Debajo de y=1500 y a la derecha de x=930 en la mitad inferior tapan los botones y el texto: nada importante ahí.
 
@@ -93,7 +93,10 @@ Estética de periódico de papel: línea fina, planos de color, rayos dorados fi
 ### Monigotes
 
 - Son **papeles**, no personas: diputado (`corbata`), presidente (`banda`), ciudadana/o, cúpula del partido (`maletin`), votante (`papeleta`). Desde el 25/11/2026 llevan **cara sencilla** (ojos de punto, cejas, boca) para mostrar emociones, pero genérica: nunca parecida a nadie real.
-- Nunca una persona real reconocible (ni rasgos, ni peinados, ni caricaturas). Nada de logos ni colores reales de partidos: «Partido A / Partido B» o el nombre en texto si el dato lo exige.
+- **Partidos (desde el 25/11/2026, lo pidió Ramón):** se pueden nombrar y reconocer. Ropa y elementos en el color de cada partido, y sus siglas en un recuadro de su color («PP», «PSOE», «VOX», «SUMAR»…). Los logotipos en sí (la gaviota, el puño y la rosa…) **no se dibujan**: se usan siglas y colores.
+- **Personas públicas:** figura genérica del papel que ocupa (presidenta, ministro…), con el sexo y el color del partido que corresponden, y un rótulo con nombre y cargo («Isabel Díaz Ayuso · presidenta de la Comunidad de Madrid»). Sin parecido físico ni caricatura: ni rasgos, ni peinado característico, ni gafas o barba que la identifiquen. Solo se le atribuye lo que ha dicho o hecho de verdad.
+- **Frases reales:** de políticos, personajes públicos o virales, **textuales y comprobadas**, con ficha de fecha y fuente (medio, Diario de Sesiones, vídeo oficial). Nunca inventadas ni resumidas como si fueran textuales.
+- **Equilibrio:** si un vídeo retrata a un partido o a una persona, el criterio es el de siempre (no partidista): se critican reglas y hechos, con la misma vara para todos.
 - Colores: tinta por defecto, burdeos para el protagonista de la frase, piedra para «la gente» o el fondo.
 
 ### Efectos (`public/sfx`, sintetizados por `tools/sfx.py`, son nuestros)
@@ -136,6 +139,10 @@ Si un efecto suena pobre se puede cambiar por uno CC0 (Kenney, Freesound filtrad
 - Ninguna voz ni cara de personas reales salvo la de Ramón (y la de Alberto solo con su permiso).
 - Nada de música, clips o imágenes con derechos. Ni copiar frases, metáforas o estructura de otras cuentas.
 - Semana electoral: sin sondeos los 5 días previos (LOREG 69.7) y nada de campaña el día de reflexión (art. 53).
+
+## Actualidad
+
+Ramón quiere estar atento a la actualidad («al mercado») y sacar vídeos de lo que afecte o interese a la gente: buscar la noticia, comprobar los datos en la fuente original y proponer el ángulo de La Acción.
 
 ## Revisión (tres pasadas antes de entregar)
 

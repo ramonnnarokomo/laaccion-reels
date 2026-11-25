@@ -488,7 +488,7 @@ export const construyeLineas = (from: number, to: number, spec: string): Linea[]
   });
 };
 
-export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lineas, top = 318}) => {
+export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lineas, top = 336}) => {
   const f = useCurrentFrame();
   const cur = [...lineas].reverse().find((l) => f >= l.from && f < l.to);
   if (!cur) return null;
@@ -556,7 +556,7 @@ export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lin
 };
 
 // ---------- Cierre con el sol del logo girando (gustó en el piloto; usar en bastantes vídeos, no en todos) ----------
-export const OutroSol: React.FC<{cx?: number; cy?: number; r?: number; logoW?: number; at?: number}> = ({cx = 540, cy = 650, r = 215, logoW = 420, at = 0}) => {
+export const OutroSol: React.FC<{cx?: number; cy?: number; r?: number; logoW?: number; at?: number}> = ({cx = 540, cy = 720, r = 270, logoW = 540, at = 0}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = f - at;

@@ -19,7 +19,7 @@ export const Reel: React.FC = () => (
   <AbsoluteFill>
     <Paper />
     <Sequence from={0} durationInFrames={SCENES.cierre[0]}>
-      <Header />
+      <Header top={190} />
     </Sequence>
     <Sequence from={0} durationInFrames={SCENES.revelacion[1]}>
       <Balanza />

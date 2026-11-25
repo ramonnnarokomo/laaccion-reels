@@ -34,11 +34,11 @@ export const Sfx: React.FC<{at: number; src: string; volume?: number; dur?: numb
   </Sequence>
 );
 
-export const Header: React.FC = () => (
+export const Header: React.FC<{top?: number}> = ({top = 138}) => (
   <div
     style={{
       position: 'absolute',
-      top: 190,
+      top,
       left: 100,
       right: 100,
       display: 'flex',

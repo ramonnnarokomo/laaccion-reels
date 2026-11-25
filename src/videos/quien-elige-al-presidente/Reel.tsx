@@ -33,9 +33,9 @@ export const Reel: React.FC = () => (
       );
     })}
     <Sequence from={0} durationInFrames={SC['08-cierre'].from}>
-      <Header />
+      <Header top={190} />
     </Sequence>
-    <SubtitulosArriba lineas={LINEAS} />
+    <SubtitulosArriba lineas={LINEAS} top={318} />
     {IDS.map((id) => (
       <Sequence key={'v' + id} from={SC[id].voz} layout="none">
         <Audio src={staticFile(`voz/quien-elige-al-presidente/${id}.wav`)} />
