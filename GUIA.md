@@ -4,13 +4,23 @@ Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se
 
 ## Qué es un reel nuestro
 
-- Vertical 9:16, 1080×1920, 30 fps, de 30 a 50 s (90 como mucho).
+- Vertical 9:16, 1080×1920, 30 fps, de 30 a 65 s (90 como mucho).
 - Una idea por vídeo. Gancho que se entiende en 2 s, con imagen **y** sonido.
 - Un dibujo animado por frase. Algo se mueve o aparece cada 2–3 s.
 - Voz: clon de la voz de Ramón (Chatterbox es-es). Subtítulos grabados, palabra clave en burdeos.
 - Efectos de sonido en cada aparición. **Sin música.**
 - Cada escena lleva su etiqueta: DATO · HAZ LA CUENTA · LA REGLA · LO QUE DICEN QUIENES DISCREPAN · NUESTRA RESPUESTA · QUÉ PROPONEMOS. Así se ve qué es hecho y qué es posición.
 - Cierre: logo + pregunta + laaccion.com.
+
+## Retención (lo que pide Ramón: la retención es la clave)
+
+- **No destripar al principio.** El gancho plantea el misterio o el reto y la respuesta llega pasada la mitad, nunca en los primeros segundos.
+- **Bucle abierto:** en los primeros 5 s se promete algo concreto («una vez casi votamos en Navidad») que se paga más tarde.
+- **Retos con resultado:** cada escena es una pregunta pequeña que se resuelve (¿llega a 176?, ¿se acaba el reloj?): contador, raya, sello.
+- **Cambio de entorno a mitad** (otro fondo, otra estación, otro lugar) para romper el ritmo antes de que baje la atención.
+- **Más mundo en pantalla:** figuras, monigotes que hacen cosas, entorno (hemiciclo, tribuna, urnas, calendario, calles), no solo cifras.
+- **Cierre que pide comentar:** dos opciones claras y una pregunta.
+- Ramón irá pasando vídeos virales (en texto y en vídeo) para analizar sus imágenes y dinámicas y traerlas a nuestra estética: lo que se aprenda va aquí.
 
 ## Identidad
 
@@ -82,10 +92,10 @@ Si un efecto suena pobre se puede cambiar por uno CC0 (Kenney, Freesound filtrad
 
 ## La voz
 
-1. Muestra de referencia: `muestra_voz_ramon.wav` (25/11/2026), 11 s limpios desde el primer segundo de voz (Chatterbox solo usa los primeros ~10 s). Limpiada con paso alto, reducción de ruido suave, menos «boom» en 150–300 Hz, presencia en 3 kHz, de-esser y compresión suave, a −16 LUFS. Fuera del repo: la guarda Ramón.
+1. Muestra de referencia: `muestra_voz_ramon_A.wav` (25/11/2026, la que eligió Ramón), 11 s limpios desde el primer segundo de voz (Chatterbox solo usa los primeros ~10 s). Paso alto a 60 Hz, reducción de ruido suave, puerta suave, +2 dB de graves (estante en 150 Hz), −2 dB de barro en 320 Hz, +2,5 dB de presencia en 3 kHz, +1,5 dB de aire, de-esser y compresión suave, a −16 LUFS. Graves (100–200 Hz) unos 25 dB por encima de la presencia (1,6–3,2 kHz). La primera versión recortaba graves y sonaba fina: no volver a quitárselos. Fuera del repo: la guarda Ramón.
 2. Para cada vídeo, Claude le da el texto en bloques de ≤ 280 caracteres, números escritos en letra.
 3. Ramón lo genera en la demo de Chatterbox es-es (https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-es-es) con su muestra y adjunta los audios.
-4. Claude: pasa cada bloque por `tools/voz.sh` (paso alto, menos barro en 150–400 Hz, presencia en 2–3 kHz, aire, compresión, de-esser, limitador y −14 LUFS; **sin reverb**), corta por silencios (`silencedetect`), ajusta `timeline.ts` a las duraciones reales y deja `SFX_GAIN` en ~0,55.
+4. Claude: pasa cada bloque por `tools/voz.sh` (paso alto a 70 Hz, +2 dB de cuerpo en graves, algo menos de barro en 320 Hz, presencia en 2–3 kHz, aire, compresión, de-esser, limitador y −14 LUFS; **sin reverb**; mismo equilibrio de graves que la muestra). Si la voz viene de ElevenLabs u otro motor, medir antes: suele venir más brillante y puede sobrar presencia, corta por silencios (`silencedetect`), ajusta `timeline.ts` a las duraciones reales y deja `SFX_GAIN` en ~0,55.
 5. Al publicar: etiqueta de IA activada y «Voz generada con IA a partir de la voz de Ramón» en el texto.
 
 ## Reglas que no se negocian
