@@ -22,6 +22,34 @@ Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se
 - **Cierre que pide comentar:** dos opciones claras y una pregunta.
 - Ramón irá pasando vídeos virales (en texto y en vídeo) para analizar sus imágenes y dinámicas y traerlas a nuestra estética: lo que se aprenda va aquí.
 
+### Lecciones de vídeos virales
+
+**25/11/2026 · 5 vídeos de una cuenta de animación política (67–165 s).** Se adopta la forma, nunca el contenido, las frases ni la postura.
+
+Guion:
+- **Escalera de preguntas.** El gancho es una pregunta hipotética, una frase que el espectador ya ha oído o una persona con lo que le pasó. Enseguida viene una micro-respuesta que abre otra pregunta, y así sigue: una pregunta cada ~5 s, con respuestas de una o dos palabras.
+- **Frases de 3–8 palabras.** Se habla de tú y una sola palabra por frase va en MAYÚSCULAS.
+- **Concesión honesta** («¿Es mentira? No del todo») y **apoyo en una autoridad con ficha de fuente** en pantalla.
+- **Una persona real y pública con nombre, cargo y lugar**, si la historia lo pide, con fuente. Las historias de personas retienen más que las ideas sueltas.
+- **Re-gancho a mitad** que anuncia algo que «no se cuenta».
+- **Cierre** con una frase redonda que reencuadra, una acción concreta y una invitación a mandárselo a alguien concreto. Esa invitación es el disparador de compartidos.
+
+Imagen:
+- **Cada escena es un lugar**: colegio electoral (mesa, urna, papeletas, reloj de pared, pizarra), hemiciclo con tribuna, oficina, salón con sofá, ayuntamiento, estantería de leyes, calle con casas. Siempre hay suelo, fondo y luz.
+- **Personajes con cara sencilla y emociones**: ojos de punto, cejas y boca. Preocupado, gota de sudor, sorpresa, sonrisa, «?» o «!» sobre la cabeza, bocadillo «…». Variedad de tonos de piel y peinados. La ropa distingue papeles, nunca colores de partido.
+- **Mucha gente**: multitudes con caras y bocadillos, filas de diputados idénticos (disciplina), tríos en un sofá, colas.
+- **Objetos-símbolo que actúan**: balanza que se inclina, silla vacía con telaraña, lista con candado, leyes que se apilan, urna, contador tipo cuentakilómetros, sello torcido que golpea, palabra que se tacha en rojo, mano en primer plano que señala desde abajo, móvil con el vídeo como cierre.
+- **Fichas de dato**: barrita de color a la izquierda, etiqueta pequeña en versalitas, una línea con el dato, y fecha y fuente. Rótulos de persona del tipo «ELLA ES … · cargo, lugar». Cifras enormes como «19 AÑOS».
+- **Gráficos dentro de la escena**: hemiciclo con escaños de colores y marcador con raya del 50 %, barras con línea discontinua, calendario de taco.
+- **Cámara**: planos largos con movimiento suave (acercamientos, de un personaje a dos). Escena nueva cada ~4 s y cambio dentro de la escena cada 1–2 s. Sin cortes secos: fundido de ~80 ms justo al empezar la frase.
+- **Luz**: halo cálido detrás de lo importante y viñeta. En el papel, halo dorado muy suave o sombra.
+- **Subtítulos arriba**, a ~19 % de la altura. Una línea corta de 2–5 palabras que aparece palabra a palabra con un leve desenfoque. Lo ya dicho va en gris y la palabra clave en caja de selección (borde con puntitos en las esquinas). El centro y la parte de abajo quedan para la escena y lejos de los botones de TikTok.
+- **Marca pequeña** arriba a la izquierda. En vídeos largos, barra de capítulos arriba.
+
+Sonido: voz mono a unos −18 LUFS, **sin música** (en las pausas hay silencio) y efectos en las apariciones. Las pausas ocupan ~22 % del tiempo: no se pega todo.
+
+Lo que **no** se adopta: logos y colores de partidos, imágenes o voces de personas reales grabadas, su campaña ni sus frases.
+
 ## Identidad
 
 | | |
@@ -63,7 +91,7 @@ Estética de periódico de papel: línea fina, planos de color, rayos dorados fi
 
 ### Monigotes
 
-- Son **papeles**, no personas: diputado (`corbata`), presidente (`banda`), ciudadana/o, cúpula del partido (`maletin`), votante (`papeleta`). Sin cara.
+- Son **papeles**, no personas: diputado (`corbata`), presidente (`banda`), ciudadana/o, cúpula del partido (`maletin`), votante (`papeleta`). Desde el 25/11/2026 llevan **cara sencilla** (ojos de punto, cejas, boca) para mostrar emociones, pero genérica: nunca parecida a nadie real.
 - Nunca una persona real reconocible (ni rasgos, ni peinados, ni caricaturas). Nada de logos ni colores reales de partidos: «Partido A / Partido B» o el nombre en texto si el dato lo exige.
 - Colores: tinta por defecto, burdeos para el protagonista de la frase, piedra para «la gente» o el fondo.
 
