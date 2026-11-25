@@ -273,11 +273,11 @@ export const Sala: React.FC<{
   const f = useCurrentFrame();
   return (
     <svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-      <rect x={-900} y={-900} width={2880} height={suelo + 900} fill={pared} opacity={0.85} />
-      {zocalo && <rect x={-900} y={suelo - 60} width={2880} height={60} fill={C.tarjeta} opacity={0.9} />}
-      {zocalo && <line x1={-900} y1={suelo - 60} x2={1980} y2={suelo - 60} stroke={C.tinta} strokeWidth={2} opacity={0.25} />}
-      <rect x={-900} y={suelo} width={2880} height={1800} fill={piso} opacity={0.9} />
-      <line x1={-900} y1={suelo} x2={1980} y2={suelo} stroke={C.tinta} strokeWidth={3} opacity={0.55} />
+      <rect x={-900} y={-900} width={3600} height={suelo + 900} fill={pared} opacity={0.85} />
+      {zocalo && <rect x={-900} y={suelo - 60} width={3600} height={60} fill={C.tarjeta} opacity={0.9} />}
+      {zocalo && <line x1={-900} y1={suelo - 60} x2={2700} y2={suelo - 60} stroke={C.tinta} strokeWidth={2} opacity={0.25} />}
+      <rect x={-900} y={suelo} width={3600} height={1800} fill={piso} opacity={0.9} />
+      <line x1={-900} y1={suelo} x2={2700} y2={suelo} stroke={C.tinta} strokeWidth={3} opacity={0.55} />
       {ventana.map((vx, i) => (
         <g key={i} transform={`translate(${vx} ${suelo - 520})`}>
           <rect x={-90} y={0} width={180} height={230} fill="#DCE3E3" stroke={C.tinta} strokeWidth={4} />

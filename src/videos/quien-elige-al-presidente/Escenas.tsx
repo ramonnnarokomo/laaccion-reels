@@ -297,54 +297,100 @@ const Gente: React.FC<{y: number; at: number; n?: number}> = ({y, at, n = 9}) =>
   </>
 );
 
+const Lista: React.FC<{x: number; y: number; at: number; candado: number}> = ({x, y, at, candado}) => {
+  const f = useCurrentFrame();
+  if (f < at) return null;
+  const s = spring({frame: f - at, fps: 30, config: {damping: 12, stiffness: 180}});
+  const cierra = ramp(f, candado, candado + 8);
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`}>
+      <rect x={-150} y={-200} width={300} height={400} rx={10} fill="#FFFDF8" stroke={C.tinta} strokeWidth={6} />
+      <text x={0} y={-140} textAnchor="middle" fontFamily={SANS} fontWeight={900} fontSize={46} fill={C.tinta} letterSpacing={4}>
+        LISTA
+      </text>
+      {[0, 1, 2, 3, 4].map((i) => (
+        <g key={i}>
+          <text x={-112} y={-70 + i * 52} fontFamily={SANS} fontWeight={800} fontSize={30} fill={C.burdeos}>
+            {i + 1}
+          </text>
+          <rect x={-80} y={-92 + i * 52} width={190} height={24} rx={6} fill="#D9CFBE" />
+        </g>
+      ))}
+      <g transform={`translate(110 170)`}>
+        <rect x={-36} y={-20} width={72} height={60} rx={8} fill={C.dorado} stroke={C.tinta} strokeWidth={5} />
+        <path d={`M-22 -20 V${-44 + 10 * cierra} A22 22 0 0 1 22 ${-44 + 10 * cierra} V-20`} fill="none" stroke={C.tinta} strokeWidth={8} transform={`translate(0 ${-12 * (1 - cierra)})`} />
+        <circle cx={0} cy={8} r={7} fill={C.tinta} />
+      </g>
+    </g>
+  );
+};
+
 export const Regla: React.FC = () => {
   const f = useCurrentFrame();
   const F = fr('05-regla');
   const E = frEnd('05-regla');
-  // posiciones en un lienzo alto: gente abajo, urna, diputados, presidente arriba
+  const bloqueo = f >= F(4) + 2;
   return (
     <>
       <Camara
         keys={[
           [0, 1.0, 540, 1300],
           [F(1) + 20, 1.0, 540, 1300],
-          [F(1) + 70, 0.92, 540, 1000],
-          [E(1) - 10, 0.92, 540, 860],
-          [F(2), 0.95, 540, 1060],
-          [F(3), 1.0, 540, 980],
-          [F(4), 1.0, 540, 860],
+          [F(2), 0.92, 540, 1000],
+          [E(2), 0.92, 540, 860],
+          [F(3), 0.95, 540, 1000],
+          [F(5) - 2, 0.95, 540, 1000],
+          [F(5) + 16, 1.0, 1560, 1250],
+          [F(6) + 40, 1.04, 1560, 1250],
         ]}
       >
         <Sala suelo={1640} pared="#F3ECDF" piso={SUELO} zocalo={false} />
         <Lienzo>
           <Gente y={1720} at={2} />
           <Urna x={540} y={1450} w={220} papeletas={6} />
-          <Flecha x1={540} y1={1260} x2={540} y2={1120} at={F(1) + 40} />
-          {/* fila de diputados idénticos */}
+          <Flecha x1={540} y1={1260} x2={540} y2={1120} at={F(2) - 10} />
           {Array.from({length: 13}).map((_, i) => (
-            <Persona key={i} x={110 + i * 72} y={1080 - (i % 2) * 18} h={150} at={F(1) + 52 + i} piel={PIEL[1]} pelo="corto" peloColor={PELO[0]} ropa={ROPA.tinta} acc="corbata" gesto="serio" semilla={20 + i} respira={false} />
+            <Persona key={i} x={110 + i * 72} y={1080 - (i % 2) * 18} h={150} at={F(2) + i} piel={PIEL[1]} pelo="corto" peloColor={PELO[0]} ropa={ROPA.tinta} acc="corbata" gesto="serio" semilla={20 + i} respira={false} />
           ))}
-          <Flecha x1={540} y1={880} x2={540} y2={760} at={E(1) - 30} />
-          {f >= F(1) + 50 && <Silla x={540} y={690} />}
-          <Persona x={540} y={700} h={220} at={E(1) - 20} piel={PIEL[2]} pelo="corto" peloColor={PELO[3]} ropa={ROPA.tinta} acc="banda" gesto={[[0, 'serio'], [F(4), 'contento']]} semilla={33} />
-          {f >= F(2) && <ManoPOV at={F(2)} tx={600} ty={1090} />}
+          <Flecha x1={540} y1={880} x2={540} y2={760} at={F(2) + 40} />
+          {f >= F(2) + 30 && <Silla x={540} y={690} />}
+          <Persona x={540} y={700} h={220} at={F(2) + 50} piel={PIEL[2]} pelo="corto" peloColor={PELO[3]} ropa={ROPA.tinta} acc="banda" gesto="serio" semilla={33} />
+          {f >= F(3) && <ManoPOV at={F(3)} tx={bloqueo ? 640 : 600} ty={bloqueo ? 1230 : 1090} />}
+          {/* el plató de la lista, a la derecha */}
+          <rect x={1260} y={1180} width={560} height={30} fill="#9C7E5C" />
+          <rect x={1290} y={1210} width={500} height={120} fill="#B3936D" />
+          <Lista x={1680} y={1000} at={F(5)} candado={F(5) + 24} />
+          <Persona x={1400} y={1640} h={300} at={F(5) + 6} piel={PIEL[0]} pelo="calvo" peloColor={PELO[3]} ropa={ROPA.tinta} acc="gafas" pose={[[0, 'quieto'], [F(6), 'senala']]} gesto={[[0, 'serio'], [F(6) + 20, 'contento']]} semilla={90} />
         </Lienzo>
-        {f >= F(1) + 60 && (
+        {f >= F(2) + 10 && f < F(5) && (
           <div style={{position: 'absolute', left: 0, right: 0, top: 1110, textAlign: 'center', fontFamily: SANS, fontWeight: 800, fontSize: 40, color: C.tinta, letterSpacing: '0.06em'}}>350 DIPUTADOS</div>
         )}
-        {f >= F(3) && <Halo x={540} y={1030} r={420} at={F(3)} op={0.28} />}
-        {f >= F(4) && <Halo x={540} y={600} r={300} at={F(4)} op={0.35} />}
+        {bloqueo && f < F(5) + 10 && <Sello x={640} y={1190} at={F(4) + 2} texto="✗" size={120} rot={-6} />}
+        {f >= F(6) && (
+          <div style={{position: 'absolute', left: 1170, top: 840, width: 340, textAlign: 'right', fontFamily: SANS, fontWeight: 800, fontSize: 38, lineHeight: 1.15, letterSpacing: '0.06em', color: C.burdeos, opacity: interpolate(f - F(6), [0, 6], [0, 1], clamp)}}>
+            LA HACE LA DIRECCIÓN DEL PARTIDO
+          </div>
+        )}
+        {f >= E(2) - 16 && f < F(3) + 10 && <Halo x={540} y={600} r={300} at={E(2) - 16} op={0.35} />}
       </Camara>
+      {f < F(5) ? (
+        <Ficha x={90} y={1372} w={660} at={F(2) + 10} etiqueta="Constitución, art. 99" dato="El Congreso vota al presidente: 176 votos, o más síes que noes 48 h después" />
+      ) : (
+        <Ficha x={90} y={1372} w={700} at={F(5) + 12} etiqueta="LOREG, art. 96.2" dato="Si tachas, añades o cambias el orden de los nombres, tu voto es nulo" />
+      )}
       <Tag text="La regla" delay={4} top={TAG_TOP} />
-      <Ficha x={90} y={1372} w={660} at={F(2)} etiqueta="Constitución, art. 99" dato="El Congreso vota al presidente: 176 votos, o más síes que noes 48 h después" />
       <Sfx at={4} src="whoosh_soft" volume={0.5} />
       {Array.from({length: 9}).map((_, i) => (
         <Sfx key={i} at={12 + i * 3} src="drop" volume={0.25} dur={10} />
       ))}
-      <Sfx at={F(1) + 52} src="riser" volume={0.35} />
-      <Sfx at={E(1) - 20} src="thump" volume={0.7} />
-      <Sfx at={F(2)} src="whoosh" volume={0.5} />
-      <Sfx at={F(4)} src="ding" volume={0.6} />
+      <Sfx at={F(2)} src="riser" volume={0.35} />
+      <Sfx at={F(2) + 50} src="thump" volume={0.7} />
+      <Sfx at={F(3)} src="whoosh" volume={0.5} />
+      <Sfx at={F(4) + 2} src="stamp" volume={0.8} />
+      <Sfx at={F(5)} src="whoosh" volume={0.5} />
+      <Sfx at={F(5) + 2} src="paper" volume={0.6} />
+      <Sfx at={F(5) + 24} src="clack" volume={0.8} />
+      <Sfx at={F(6)} src="pop" volume={0.5} />
     </>
   );
 };
@@ -430,7 +476,7 @@ export const Cierre: React.FC = () => {
   );
   return (
     <>
-      <OutroSol cx={540} cy={680} r={200} logoW={380} />
+      <OutroSol cx={540} cy={690} r={235} logoW={620} />
       {tarjeta(110, F(0), 'Que lo vote el Congreso', <><circle cx={80} cy={70} r={46} fill="none" stroke={C.tinta} strokeWidth={5} /><path d="M50 70 L110 70 M80 40 L80 100" stroke={C.dorado} strokeWidth={6} /></>)}
       {tarjeta(590, F(0) + 4, 'Votarlo tú, aparte', <><rect x={40} y={30} width={80} height={90} rx={6} fill="#E7EEF0" stroke={C.tinta} strokeWidth={5} /><rect x={58} y={14} width={44} height={30} fill="#FFFDF8" stroke={C.tinta} strokeWidth={4} /></>)}
       {f >= F(1) && (

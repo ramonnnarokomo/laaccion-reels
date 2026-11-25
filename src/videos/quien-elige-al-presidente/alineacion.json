@@ -140,32 +140,42 @@
   ]
  },
  "05-regla": {
-  "dur": 10.03,
+  "dur": 13.729,
   "subs": [
    {
     "from": 0.06,
-    "to": 1.09,
+    "to": 1.27,
     "text": "¿Y por qué pasa esto?"
    },
    {
-    "from": 1.39,
-    "to": 6.26,
-    "text": "Porque al presidente no lo eligen las urnas: lo votan trescientos cincuenta diputados."
+    "from": 1.51,
+    "to": 3.8,
+    "text": "Porque al presidente no lo eligen las urnas:"
    },
    {
-    "from": 6.56,
-    "to": 7.97,
-    "text": "Tú eliges quién se sienta."
+    "from": 3.96,
+    "to": 6.55,
+    "text": "lo votan trescientos cincuenta diputados."
    },
    {
-    "from": 8.27,
-    "to": 8.8,
-    "text": "Ellos,"
+    "from": 6.85,
+    "to": 7.95,
+    "text": "Y a esos diputados..."
    },
    {
-    "from": 9.04,
-    "to": 9.93,
-    "text": "quién gobierna."
+    "from": 8.13,
+    "to": 9.35,
+    "text": "tampoco los eliges tú."
+   },
+   {
+    "from": 9.65,
+    "to": 11.28,
+    "text": "Votas una lista cerrada..."
+   },
+   {
+    "from": 11.7,
+    "to": 13.73,
+    "text": "que hace la dirección de cada partido."
    }
   ]
  },
