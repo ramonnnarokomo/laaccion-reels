@@ -82,7 +82,7 @@ Si un efecto suena pobre se puede cambiar por uno CC0 (Kenney, Freesound filtrad
 
 ## La voz
 
-1. Ramón grabó una vez una muestra limpia de 15–30 s (`voz/muestra-ramon.wav`, fuera del repo si prefiere).
+1. Muestra de referencia: `muestra_voz_ramon.wav` (25/11/2026), 11 s limpios desde el primer segundo de voz (Chatterbox solo usa los primeros ~10 s). Limpiada con paso alto, reducción de ruido suave, menos «boom» en 150–300 Hz, presencia en 3 kHz, de-esser y compresión suave, a −16 LUFS. Fuera del repo: la guarda Ramón.
 2. Para cada vídeo, Claude le da el texto en bloques de ≤ 280 caracteres, números escritos en letra.
 3. Ramón lo genera en la demo de Chatterbox es-es (https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-es-es) con su muestra y adjunta los audios.
 4. Claude: pasa cada bloque por `tools/voz.sh` (paso alto, menos barro en 150–400 Hz, presencia en 2–3 kHz, aire, compresión, de-esser, limitador y −14 LUFS; **sin reverb**), corta por silencios (`silencedetect`), ajusta `timeline.ts` a las duraciones reales y deja `SFX_GAIN` en ~0,55.
