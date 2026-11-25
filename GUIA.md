@@ -1,6 +1,6 @@
 # Guía de los reels de LA ACCIÓN
 
-Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se decide con Ramón.
+Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se decide con Ramón. **El discurso lo manda [`LINEA.md`](LINEA.md).**
 
 ## Qué es un reel nuestro
 
@@ -136,7 +136,7 @@ Si un efecto suena pobre se puede cambiar por uno CC0 (Kenney, Freesound filtrad
 ## Reglas que no se negocian
 
 - Cada cifra con su fuente abierta; separar hecho, interpretación y posición. Nada «a comprobar» sin verificar.
-- **Rigor con la línea de La Acción:** nunca decir que la gente «elige» a sus diputados. Se vota una **lista cerrada y bloqueada** que pone la dirección de cada partido (LOREG, art. 96.2: el voto es nulo si tachas, añades o cambias el orden de los nombres). Fallo corregido en «¿Quién elige al presidente?» el 25/11/2026. «Madrid elige 38 diputados» es la fórmula legal («diputados a elegir» en el decreto), pero mejor «Madrid reparte 38 escaños».
+- **Rigor con todo lo que defiende La Acción: [`LINEA.md`](LINEA.md)** (tesis, método, propuesta, vocabulario y frases, sacados del cuaderno de ideas de Ramón). Cada guion se contrasta con esa hoja antes de escribirlo. Ejemplo de fallo: nunca decir que la gente «elige» a sus diputados. Se vota una **lista cerrada y bloqueada** que pone la dirección de cada partido (LOREG, art. 96.2: el voto es nulo si tachas, añades o cambias el orden de los nombres). Fallo corregido en «¿Quién elige al presidente?» el 25/11/2026. «Madrid elige 38 diputados» es la fórmula legal («diputados a elegir» en el decreto), pero mejor «Madrid reparte 38 escaños».
 - No partidista: se critican reglas, no personas ni partidos por ser quienes son.
 - Versión seria, nunca la conspiranoica.
 - Ninguna voz ni cara de personas reales salvo la de Ramón (y la de Alberto solo con su permiso).
