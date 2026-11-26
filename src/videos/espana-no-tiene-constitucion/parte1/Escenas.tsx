@@ -66,8 +66,8 @@ export const Art16: React.FC = () => {
         y={680}
         w={860}
         at={Fi(0) + 4}
-        medio="Declaración de Derechos · 1789"
-        fecha="art. 16"
+        medio="Declaración de los Derechos del Hombre y del Ciudadano · 1789"
+        fecha={'art.\u00a016'}
         texto="«Toda sociedad en la que no esté asegurada [[la garantía de los derechos]], ni determinada [[la separación de poderes]], no tiene Constitución.»"
         marcasEn={[
           [Fi(1), Fi(1) + mitad - 4],
