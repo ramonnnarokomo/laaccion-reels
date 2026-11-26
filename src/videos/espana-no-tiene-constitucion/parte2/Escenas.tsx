@@ -90,12 +90,14 @@ export const Cortes: React.FC = () => {
         </Camara>
       )}
       <Pildora text="15-J-1977 · Libres ✓" x={540} y={700} at={Fi(1) + 4} variante="blanco" out={Fi(2) - 2} />
-      <FotoReal src="img/constitucion/boe1977_art2.png" pie="BOE · Ley 1/1977, para la Reforma Política" x={540} y={600} w={560} h={622} at={Fi(2)} out={Fi(4) - 4} zoom={[1, 1]} marcas={[{...ART3, from: Ei(2) - 55, to: Ei(2) - 25}, ...ART23.map((m, i) => ({...m, from: Fi(3) + 4 + i * 10, to: Fi(3) + 14 + i * 10}))]} />
-      <Pildora text="Aprobada por las Cortes de Franco" x={540} y={1265} at={Fi(2) + 14} apaga={Fi(2) + 80} out={Fi(4) - 4} />
-      <Pildora text="Refrendada en 1976" x={540} y={1350} at={Fi(2) + 80} variante="blanco" out={Fi(4) - 4} />
-      <FotoReal src="img/constitucion/senado.png" pie="Palacio del Senado · Madrid" x={540} y={620} w={760} h={461} at={Fi(4)} credito="Foto: Luis García (Zaqarbal) · CC BY-SA 3.0" />
-      <Pildora text="41 senadores, designados por el Rey" x={540} y={1190} at={Fi(4) + 8} variante="burdeos" />
-      <FuenteMini text={f < Fi(4) ? 'Ley 1/1977, para la Reforma Política (BOE 5/1/1977)' : 'Ley 1/1977, art. 2.3 · El País, 17/6/1977'} x={540} y={1530} at={Fi(2) + 6} />
+      <FotoReal src="img/constitucion/boe1977_art2.png" pie="BOE · Ley 1/1977, para la Reforma Política" x={540} y={600} w={560} h={622} at={Fi(2)} out={Fi(3) + 38} zoom={[1, 1]} marcas={[{...ART3, from: Ei(2) - 55, to: Ei(2) - 25}, ...ART23.map((m, i) => ({...m, from: Fi(3) + 2 + i * 9, to: Fi(3) + 11 + i * 9}))]} />
+      <Pildora text="Aprobada por las Cortes de Franco" x={540} y={1265} at={Fi(2) + 14} apaga={Fi(2) + 80} out={Fi(3) + 38} />
+      <Pildora text="Refrendada en 1976" x={540} y={1350} at={Fi(2) + 80} variante="blanco" out={Fi(3) + 38} />
+      <FotoReal src="img/constitucion/senado.png" pie="Palacio del Senado · Madrid" x={500} y={600} w={700} h={425} at={Fi(3) + 40} credito="Foto: Luis García (Zaqarbal) · CC BY-SA 3.0" rot={-2} />
+      <Pildora text="41 senadores" x={540} y={1100} at={Fi(3) + 46} variante="dorado" out={Fi(4) - 2} />
+      <FotoReal src="img/constitucion/juan-carlos-1975.jpg" pie="Juan Carlos I · proclamación, 22-XI-1975" x={600} y={780} w={600} h={380} at={Fi(4)} credito="Foto: La Vanguardia" foco={[64, 35]} zoom={[1.0, 1.06]} rot={2.5} />
+      <Pildora text="Designados por el Rey" x={560} y={1240} at={Fi(4) + 6} variante="burdeos" />
+      <FuenteMini text={f < Fi(3) + 40 ? 'Ley 1/1977, para la Reforma Política (BOE 5/1/1977)' : 'Ley 1/1977, art. 2.3 · El País, 17/6/1977'} x={540} y={1530} at={Fi(2) + 6} />
       <Tag text="Las Cortes de 1977" delay={4} top={TAG_TOP} />
       <Sfx at={Fi(1)} src="clunk" volume={0.5} />
       {Array.from({length: 5}).map((_, i) => (
@@ -104,9 +106,11 @@ export const Cortes: React.FC = () => {
       <Sfx at={Fi(2)} src="whoosh" volume={0.5} />
       <Sfx at={Fi(2) + 14} src="pop" volume={0.4} />
       <Sfx at={Ei(2) - 55} src="key" volume={0.3} />
-      <Sfx at={Fi(3) + 4} src="key" volume={0.3} />
+      <Sfx at={Fi(3) + 2} src="key" volume={0.3} />
+      <Sfx at={Fi(3) + 40} src="whoosh" volume={0.5} />
+      <Sfx at={Fi(3) + 46} src="pop" volume={0.4} />
       <Sfx at={Fi(4)} src="whoosh" volume={0.5} />
-      <Sfx at={Fi(4) + 8} src="stamp" volume={0.6} />
+      <Sfx at={Fi(4) + 6} src="stamp" volume={0.65} />
     </>
   );
 };
