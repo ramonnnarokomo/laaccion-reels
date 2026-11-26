@@ -37,7 +37,7 @@ Todo el entrenamiento vive en el repo `ramonnnarokomo/laaccion-reels` y se mejor
 - El archivo llega a Descargas como `<uuid>.tmp`. Se localiza por la hora, se trae con `device_stage_files` y se comprueba con `ffprobe` (que dure lo mismo que el reproductor).
 - Claude no oye el audio. Comprueba lo objetivo y deja el acento a quien esté presente.
 - Si el PC no responde o no hay sesión en ElevenLabs: entregar el texto de la voz y esperar el mp3 adjunto en el chat.
-- El encargo cuenta como permiso para generar y descargar la voz de ese vídeo, nada más.
+- Generar y descargar la voz necesita el sí de quien hace el encargo en el chat: vale si el encargo dice «con voz» o «voz incluida»; si no, preguntarlo una vez antes de generar.
 
 ## Trabajar en una sesión
 

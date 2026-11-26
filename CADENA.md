@@ -29,6 +29,7 @@ Del mensaje salen: tema, idea, fundamentos, fecha límite de publicación y si e
 
 Voz «Ramón» (clon), modelo Eleven v4, idioma español. Reglas del texto: etiquetas en inglés (`[curious]`, `[serious]`, `[short pause]`, `[storytelling]`…), puntos suspensivos para pausas, MAYÚSCULAS para énfasis, números en letra, «la acción punto com». Empieza siempre por `[Castilian Spanish accent, from Madrid] Vale, vamos allá.` (calentamiento: se corta después).
 
+0. Permiso: el encargo tiene que decir «con voz» / «voz incluida»; si no, preguntar una vez antes de generar.
 1. Créditos: leer los «créditos restantes» de la página. Si el texto (en caracteres) no cabe, parar y avisar. **Nunca** comprar, mejorar plan ni tocar ofertas (Ramón no paga más planes).
 2. Pegar el texto en el editor (sustituyendo el anterior) y pulsar «Generar discurso». Esperar a que el reproductor tenga duración (`document.querySelector('audio').duration`).
 3. Antes de descargar, apuntar la hora del archivo más nuevo de la carpeta Descargas conectada. Pulsar «Descargar audio»; si sale la encuesta «¿Para qué vas a usar este audio?», «Omitir».
