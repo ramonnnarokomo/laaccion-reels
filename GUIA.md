@@ -14,6 +14,7 @@ Esta guía manda sobre cualquier otra idea de estilo. Si algo no está aquí, se
 
 ## Retención (lo que pide Ramón: la retención es la clave)
 
+- **En los primeros 5 segundos tienen que pasar muchas cosas** (Ramón, 26/11/2026): al menos 4–5 cambios visuales antes del segundo 5 (objeto que cae o entra, personaje que reacciona, foto o documento real, cifra que corre, sello), sin esperar a que termine la frase.
 - **No destripar al principio.** El gancho plantea el misterio o el reto y la respuesta llega pasada la mitad, nunca en los primeros segundos.
 - **Bucle abierto:** en los primeros 5 s se promete algo concreto («una vez casi votamos en Navidad») que se paga más tarde.
 - **Retos con resultado:** cada escena es una pregunta pequeña que se resuelve (¿llega a 176?, ¿se acaba el reloj?): contador, raya, sello.
