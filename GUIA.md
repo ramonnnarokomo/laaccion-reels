@@ -50,6 +50,30 @@ Sonido: voz mono a unos −18 LUFS, **sin música** (en las pausas hay silencio)
 
 Lo que **no** se adopta: logos y colores de partidos, imágenes o voces de personas reales grabadas, su campaña ni sus frases.
 
+**26/11/2026 · vídeo 6 de la misma cuenta (66 s, «tablero oscuro»).** Se adopta la forma. Su tema (el reparto del CGPJ) se cruza con la parte 1 de nuestra serie: ni sus frases, ni su orden, ni sus imágenes (escaños azul/rojo, cuerda que se vuelve apretón de manos).
+
+Ritmo:
+- **Un cambio visual en casi cada frase** (0,5–1 s): entra un objeto, se colorea, se tacha, sube un contador. Nada quieto más de 2 s.
+- **Sin cortes secos y con fondo fijo**: lo que sale se funde en 0,2–0,3 s con algo de desenfoque y lo nuevo entra con *pop* (escala 0,9→1). Parece un único plano continuo.
+- Voz muy pegada (pausas de ~0,15 s, ~2,3 palabras/s), base grave y suave todo el rato y efectos: tic del contador, golpe del sello, *whoosh* de la foto.
+
+Recursos:
+- **Foto real como prueba.** Al nombrar una institución u objeto concreto (una sede, un hemiciclo, una urna) aparece su foto real en una tarjeta: esquinas redondeadas, borde claro, sombra y banda inferior con el pie en versalitas («SEDE DEL CGPJ · MADRID», «URNA REAL · IMAGEN DE ARCHIVO»). Entra con un destello de 2–3 fotogramas, hace un Ken Burns lento y sale fundida. A veces es un clip corto de vídeo.
+- **Recorte con subrayado**: tarjeta de una noticia o documento (medio, fecha, cita en serif) y un rotulador amarillo que pasa por las palabras justo cuando la voz las dice.
+- **El tiempo que pasa**: calendario que arranca hojas (vuelan girando) y un contador «X DÍAS SIN…» que corre; cada palabra («Un año. Dos. Tres.») es una hoja.
+- **Destello de color** en las palabras negativas: viñeta roja de ~0,25 s. **Sello** que golpea con temblor y destello.
+- **Píldoras**: textos cortos bajo el objeto que repiten la clave; la anterior se apaga cuando entra la siguiente.
+- **Objetos que vuelven y cambian de estado** para contar el giro: el objeto del gancho reaparece al final; algo pasa de gris a color, o de pelearse a pactar.
+- **Fuente mínima**: en los golpes rápidos, una línea pequeña bajo el gráfico («Constitución, art. 122.3»); la ficha grande, para los datos fuertes.
+- **Cierre**: móvil con un chat «Tu amigo» y la píldora MÁNDASELO.
+
+Cómo lo hacemos nosotros (sin perder el papel):
+- **Fotos reales solo de edificios, lugares, objetos y documentos**: con licencia libre (Wikimedia Commons CC BY / BY-SA o dominio público) y crédito en la tarjeta y en el post, o documentos oficiales (BOE, Diarios de Sesiones; LPI art. 13). **Nunca fotos de personas** (tampoco de políticos), ni fotos de prensa, portadas o capturas de tele con derechos: las personas siguen siendo monigotes con rótulo.
+- El espacio de trabajo no puede descargar de internet: las fotos y los PDF del BOE los pasa Ramón (o se bajan en su ordenador, con su permiso). Los PDF se rasterizan con `pdftoppm` y se recortan.
+- Piezas en `src/kit/real.tsx`: `FotoReal`, `Recorte` (con `Subrayado`), `Destello`, `Pildora`, `FuenteMini`. El sello ya existe (`Sello`), el calendario (`Taco`) y el contador (`Counter`) también.
+- Dosis: 2–4 fotos o recortes por vídeo, en los momentos de «esto es real». El resto, nuestro mundo dibujado.
+- Base musical: opcional y solo si Ramón la quiere; generada por nosotros (sin derechos) y muy por debajo de la voz.
+
 ## Identidad
 
 | | |
