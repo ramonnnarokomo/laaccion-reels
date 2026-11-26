@@ -1,0 +1,202 @@
+{
+ "01-gancho": {
+  "dur": 6.73,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.16,
+    "text": "El primer borrador de la Constitución se escribió en secreto."
+   },
+   {
+    "from": 3.46,
+    "to": 6.63,
+    "text": "Y si lo leímos antes de tiempo... fue porque alguien lo filtró."
+   }
+  ]
+ },
+ "02-filtracion": {
+  "dur": 5.63,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.34,
+    "text": "Noviembre de mil novecientos setenta y siete:"
+   },
+   {
+    "from": 2.52,
+    "to": 4.0,
+    "text": "lo publica una revista,"
+   },
+   {
+    "from": 4.16,
+    "to": 5.53,
+    "text": "Cuadernos para el Diálogo."
+   }
+  ]
+ },
+ "03-cortes": {
+  "dur": 14.69,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.93,
+    "text": "¿Y quién había elegido a esas Cortes?"
+   },
+   {
+    "from": 2.23,
+    "to": 3.74,
+    "text": "Unas elecciones libres, sí."
+   },
+   {
+    "from": 3.9,
+    "to": 10.73,
+    "text": "Pero con una ley de las Cortes de Franco, refrendada en mil novecientos setenta y seis, que no hablaba de Cortes constituyentes."
+   },
+   {
+    "from": 10.91,
+    "to": 13.27,
+    "text": "Y cuarenta y un senadores no los votó nadie:"
+   },
+   {
+    "from": 13.45,
+    "to": 14.59,
+    "text": "los nombró el Rey."
+   }
+  ]
+ },
+ "04-objecion": {
+  "dur": 9.02,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.18,
+    "text": "Quien lo defiende dice:"
+   },
+   {
+    "from": 1.48,
+    "to": 4.89,
+    "text": "luego hubo referéndum, casi un ochenta y ocho por ciento de síes."
+   },
+   {
+    "from": 5.19,
+    "to": 5.59,
+    "text": "Cierto."
+   },
+   {
+    "from": 5.89,
+    "to": 7.54,
+    "text": "Pero era sí o no a TODO."
+   },
+   {
+    "from": 7.84,
+    "to": 8.92,
+    "text": "Monarquía incluida."
+   }
+  ]
+ },
+ "05-suarez": {
+  "dur": 16.09,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.29,
+    "text": "¿Por qué no se votó aparte?"
+   },
+   {
+    "from": 1.59,
+    "to": 7.38,
+    "text": "Lo contó Adolfo Suárez en una entrevista de mil novecientos noventa y cinco que no se emitió hasta dos mil dieciséis."
+   },
+   {
+    "from": 7.68,
+    "to": 8.6,
+    "text": "Tapando el micrófono:"
+   },
+   {
+    "from": 8.9,
+    "to": 10.7,
+    "text": "«hacía encuestas y perdíamos»."
+   },
+   {
+    "from": 11.0,
+    "to": 15.99,
+    "text": "Así que metió la palabra «Rey» en la Ley para la Reforma Política... y dio la monarquía por votada."
+   }
+  ]
+ },
+ "06-sieyes": {
+  "dur": 8.34,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.02,
+    "text": "Sieyès lo dejó escrito en mil setecientos ochenta y nueve:"
+   },
+   {
+    "from": 3.32,
+    "to": 5.37,
+    "text": "una Constitución la hace la nación."
+   },
+   {
+    "from": 5.53,
+    "to": 8.24,
+    "text": "No los poderes que ya existen, pactando entre ellos."
+   }
+  ]
+ },
+ "07-alternativa": {
+  "dur": 9.61,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.16,
+    "text": "Y había alternativa."
+   },
+   {
+    "from": 1.46,
+    "to": 7.85,
+    "text": "En mil novecientos setenta y seis, la oposición unida pedía un periodo constituyente y una consulta sobre la forma de Estado."
+   },
+   {
+    "from": 8.15,
+    "to": 9.51,
+    "text": "Por el camino, lo dejaron."
+   }
+  ]
+ },
+ "08-cierre": {
+  "dur": 8.55,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.69,
+    "text": "Elecciones libres... sí."
+   },
+   {
+    "from": 1.99,
+    "to": 3.85,
+    "text": "Constituyentes por mandato expreso..."
+   },
+   {
+    "from": 4.24,
+    "to": 4.56,
+    "text": "no."
+   },
+   {
+    "from": 4.86,
+    "to": 6.14,
+    "text": "¿Y si hoy quisieras cambiarlo?"
+   },
+   {
+    "from": 6.44,
+    "to": 7.41,
+    "text": "¿Quién tiene las llaves?"
+   },
+   {
+    "from": 7.71,
+    "to": 8.45,
+    "text": "Parte tres."
+   }
+  ]
+ }
+}

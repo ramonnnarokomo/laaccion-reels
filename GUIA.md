@@ -50,6 +50,8 @@ Sonido: voz mono a unos −18 LUFS, **sin música** (en las pausas hay silencio)
 
 Lo que **no** se adopta: logos y colores de partidos, imágenes o voces de personas reales grabadas, su campaña ni sus frases.
 
+**Trucos del kit (26/11/2026):** `Persona`, `Urna`, `Mesa`, `Flecha` y demás piezas SVG van **dentro de `<Lienzo>`** (o de un `<svg>`); fuera no se ven. `Header` admite `serie` y `der` («La Constitución, a prueba» · «1/3») para series que no son del 29N. Las series llevan sus piezas comunes en `src/videos/<serie>/comun.tsx` (con `armaTimeline`) y su `Portada.tsx`.
+
 **26/11/2026 · vídeo 6 de la misma cuenta (66 s, «tablero oscuro»).** Se adopta la forma. Su tema (el reparto del CGPJ) se cruza con la parte 1 de nuestra serie: ni sus frases, ni su orden, ni sus imágenes (escaños azul/rojo, cuerda que se vuelve apretón de manos).
 
 Ritmo:
@@ -70,7 +72,9 @@ Recursos:
 Cómo lo hacemos nosotros (sin perder el papel):
 - **Fotos reales solo de edificios, lugares, objetos y documentos**: con licencia libre (Wikimedia Commons CC BY / BY-SA o dominio público) y crédito en la tarjeta y en el post, o documentos oficiales (BOE, Diarios de Sesiones; LPI art. 13). **Nunca fotos de personas** (tampoco de políticos), ni fotos de prensa, portadas o capturas de tele con derechos: las personas siguen siendo monigotes con rótulo.
 - El espacio de trabajo no puede descargar de internet: las fotos y los PDF del BOE los pasa Ramón (o se bajan en su ordenador, con su permiso). Los PDF se rasterizan con `pdftoppm` y se recortan.
-- Piezas en `src/kit/real.tsx`: `FotoReal`, `Recorte` (con `Subrayado`), `Destello`, `Pildora`, `FuenteMini`. El sello ya existe (`Sello`), el calendario (`Taco`) y el contador (`Counter`) también.
+- Piezas en `src/kit/real.tsx`: `FotoReal`, `Recorte` (con `Subrayado`), `Destello`, `Pildora`, `FuenteMini`.
+- **Cómo se consiguen (26/11/2026):** ni el espacio de trabajo ni el shell del ordenador de Ramón llegan a boe.es o a Wikimedia, y las descargas del navegador integrado no aparecen en Descargas. Lo que funciona es el **navegador integrado**: PDF del BOE abierto con `#toolbar=0&navpanes=0&zoom=180,28,<top>` (pasando antes por una página HTML para que aplique el zoom) y captura con la acción `zoom` a escala 1, que guarda un PNG nítido a 1:1 en `/tmp/claude-tool-results/…`. Fotos de Commons: la API (`prop=imageinfo&iiprop=url|extmetadata`) da licencia y autor; la miniatura de 960 px se muestra a 766 px de ancho y se captura igual. Créditos en `public/img/<serie>/CREDITOS.md`.
+- Con subrayados (`marcas`) la foto va sin Ken Burns (`zoom={[1, 1]}`), o las marcas se descolocan. El sello ya existe (`Sello`), el calendario (`Taco`) y el contador (`Counter`) también.
 - Dosis: 2–4 fotos o recortes por vídeo, en los momentos de «esto es real». El resto, nuestro mundo dibujado.
 - Base musical: opcional y solo si Ramón la quiere; generada por nosotros (sin derechos) y muy por debajo de la voz.
 

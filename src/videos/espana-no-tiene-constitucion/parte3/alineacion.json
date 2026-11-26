@@ -1,0 +1,262 @@
+{
+ "01-gancho": {
+  "dur": 8.24,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.52,
+    "text": "Si naciste después de mil novecientos sesenta,"
+   },
+   {
+    "from": 2.74,
+    "to": 5.06,
+    "text": "nunca has votado la Constitución que te gobierna."
+   },
+   {
+    "from": 5.36,
+    "to": 6.59,
+    "text": "Y cuando la han cambiado..."
+   },
+   {
+    "from": 6.93,
+    "to": 8.14,
+    "text": "tampoco te han preguntado."
+   }
+  ]
+ },
+ "02-reformas": {
+  "dur": 12.32,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.04,
+    "text": "Cuatro reformas:"
+   },
+   {
+    "from": 1.34,
+    "to": 3.43,
+    "text": "en el noventa y dos, en el dos mil once,"
+   },
+   {
+    "from": 3.59,
+    "to": 4.8,
+    "text": "en el dos mil veinticuatro..."
+   },
+   {
+    "from": 5.11,
+    "to": 5.84,
+    "text": "y este año."
+   },
+   {
+    "from": 6.14,
+    "to": 7.43,
+    "text": "Ninguna a referéndum:"
+   },
+   {
+    "from": 7.73,
+    "to": 11.21,
+    "text": "tenía que pedirlo una décima parte de los diputados o de los senadores."
+   },
+   {
+    "from": 11.51,
+    "to": 12.22,
+    "text": "Nunca se llegó."
+   }
+  ]
+ },
+ "03-deuda": {
+  "dur": 5.49,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.19,
+    "text": "La de dos mil once dio prioridad absoluta al pago de la deuda..."
+   },
+   {
+    "from": 3.49,
+    "to": 5.39,
+    "text": "y se aprobó en menos de dos semanas."
+   }
+  ]
+ },
+ "04-llaves": {
+  "dur": 11.87,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.13,
+    "text": "¿Y cambiar lo importante, como la monarquía?"
+   },
+   {
+    "from": 2.43,
+    "to": 6.51,
+    "text": "Dos tercios del Congreso y del Senado, disolver las Cortes, elecciones,"
+   },
+   {
+    "from": 6.67,
+    "to": 7.79,
+    "text": "otra vez dos tercios..."
+   },
+   {
+    "from": 8.09,
+    "to": 8.84,
+    "text": "y referéndum."
+   },
+   {
+    "from": 9.14,
+    "to": 11.77,
+    "text": "Las llaves las tienen... los que ya están dentro."
+   }
+  ]
+ },
+ "05-objecion": {
+  "dur": 16.01,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.17,
+    "text": "Quien lo defiende dice:"
+   },
+   {
+    "from": 1.47,
+    "to": 3.23,
+    "text": "aquí puedes defender cualquier idea,"
+   },
+   {
+    "from": 3.44,
+    "to": 5.04,
+    "text": "hasta cambiar la Constitución entera:"
+   },
+   {
+    "from": 5.26,
+    "to": 6.44,
+    "text": "lo ha dicho el Constitucional."
+   },
+   {
+    "from": 6.74,
+    "to": 7.2,
+    "text": "Es verdad."
+   },
+   {
+    "from": 7.5,
+    "to": 8.66,
+    "text": "Pero Tocqueville ya lo vio:"
+   },
+   {
+    "from": 8.96,
+    "to": 11.78,
+    "text": "la mayoría traza un círculo alrededor del pensamiento."
+   },
+   {
+    "from": 12.08,
+    "to": 12.55,
+    "text": "Dentro,"
+   },
+   {
+    "from": 12.78,
+    "to": 13.33,
+    "text": "eres libre."
+   },
+   {
+    "from": 13.63,
+    "to": 14.3,
+    "text": "Si sales..."
+   },
+   {
+    "from": 14.63,
+    "to": 15.91,
+    "text": "te conviertes en un extraño."
+   }
+  ]
+ },
+ "06-frase": {
+  "dur": 5.99,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.43,
+    "text": "El consenso no prohíbe pensar distinto."
+   },
+   {
+    "from": 2.73,
+    "to": 4.05,
+    "text": "Hace que pensar distinto..."
+   },
+   {
+    "from": 4.36,
+    "to": 5.89,
+    "text": "no sirva para cambiar nada."
+   }
+  ]
+ },
+ "07-propuesta": {
+  "dur": 16.06,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.63,
+    "text": "Madison lo escribió en mil setecientos ochenta y ocho:"
+   },
+   {
+    "from": 2.93,
+    "to": 5.24,
+    "text": "que la ambición contrarreste a la ambición."
+   },
+   {
+    "from": 5.54,
+    "to": 6.43,
+    "text": "Eso proponemos:"
+   },
+   {
+    "from": 6.73,
+    "to": 7.5,
+    "text": "el presidente,"
+   },
+   {
+    "from": 7.66,
+    "to": 8.51,
+    "text": "elegido aparte;"
+   },
+   {
+    "from": 8.81,
+    "to": 11.19,
+    "text": "tu diputado, de tu distrito y revocable;"
+   },
+   {
+    "from": 11.49,
+    "to": 13.72,
+    "text": "una justicia que no nombren los partidos."
+   },
+   {
+    "from": 14.02,
+    "to": 14.85,
+    "text": "Y lo importante..."
+   },
+   {
+    "from": 15.2,
+    "to": 15.96,
+    "text": "a referéndum."
+   }
+  ]
+ },
+ "08-cierre": {
+  "dur": 7.1,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.54,
+    "text": "No va de izquierdas o derechas:"
+   },
+   {
+    "from": 1.79,
+    "to": 3.42,
+    "text": "va de quién controla al poder."
+   },
+   {
+    "from": 3.72,
+    "to": 7.0,
+    "text": "Mándaselo a quien diga que esta Constitución nos la dimos entre todos."
+   }
+  ]
+ }
+}

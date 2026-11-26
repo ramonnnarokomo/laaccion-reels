@@ -34,7 +34,7 @@ export const Sfx: React.FC<{at: number; src: string; volume?: number; dur?: numb
   </Sequence>
 );
 
-export const Header: React.FC<{top?: number}> = ({top = 138}) => (
+export const Header: React.FC<{top?: number; serie?: string; der?: string}> = ({top = 138, serie = 'Haz la cuenta', der = '29N'}) => (
   <div
     style={{
       position: 'absolute',
@@ -52,9 +52,9 @@ export const Header: React.FC<{top?: number}> = ({top = 138}) => (
     }}
   >
     <span>
-      <b style={{color: C.tinta, fontWeight: 700}}>La Acción</b> · Haz la cuenta
+      <b style={{color: C.tinta, fontWeight: 700}}>La Acción</b> · {serie}
     </span>
-    <span>29N</span>
+    <span>{der}</span>
     <div style={{position: 'absolute', left: 0, right: 0, bottom: -18, height: 2, background: C.dorado}} />
   </div>
 );

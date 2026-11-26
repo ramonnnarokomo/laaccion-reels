@@ -1,0 +1,242 @@
+{
+ "01-gancho": {
+  "dur": 11.79,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.07,
+    "text": "España no tiene Constitución."
+   },
+   {
+    "from": 2.37,
+    "to": 4.92,
+    "text": "Sí, ya sé: hay un libro que se llama así."
+   },
+   {
+    "from": 5.13,
+    "to": 10.49,
+    "text": "Pero existe una prueba de mil setecientos ochenta y nueve para saber si un país la tiene DE VERDAD."
+   },
+   {
+    "from": 10.67,
+    "to": 11.69,
+    "text": "Vamos a hacérsela."
+   }
+  ]
+ },
+ "02-art16": {
+  "dur": 7.15,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.53,
+    "text": "Artículo dieciséis de la Declaración de Derechos:"
+   },
+   {
+    "from": 2.83,
+    "to": 5.59,
+    "text": "sin garantía de derechos... ni separación de poderes..."
+   },
+   {
+    "from": 5.84,
+    "to": 7.05,
+    "text": "no hay Constitución."
+   }
+  ]
+ },
+ "03-derechos": {
+  "dur": 20.93,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.94,
+    "text": "Primera pregunta:"
+   },
+   {
+    "from": 1.24,
+    "to": 2.46,
+    "text": "¿derechos garantizados?"
+   },
+   {
+    "from": 2.76,
+    "to": 5.65,
+    "text": "Los garantiza, en última instancia, el Constitucional."
+   },
+   {
+    "from": 5.95,
+    "to": 9.5,
+    "text": "En dos mil veintiuno dijo que el confinamiento fue inconstitucional,"
+   },
+   {
+    "from": 9.72,
+    "to": 11.06,
+    "text": "seis votos contra cinco."
+   },
+   {
+    "from": 11.36,
+    "to": 15.46,
+    "text": "En dos mil veinticuatro, con otros magistrados, dio esa doctrina por superada."
+   },
+   {
+    "from": 15.76,
+    "to": 16.27,
+    "text": "O sea:"
+   },
+   {
+    "from": 16.57,
+    "to": 18.58,
+    "text": "lo que valen tus derechos depende..."
+   },
+   {
+    "from": 18.74,
+    "to": 20.83,
+    "text": "de quién elige a esos magistrados."
+   }
+  ]
+ },
+ "04-poderes": {
+  "dur": 13.98,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.0,
+    "text": "Segunda pregunta:"
+   },
+   {
+    "from": 1.3,
+    "to": 2.23,
+    "text": "¿poderes separados?"
+   },
+   {
+    "from": 2.53,
+    "to": 4.14,
+    "text": "Al presidente lo vota el Congreso."
+   },
+   {
+    "from": 4.44,
+    "to": 9.56,
+    "text": "A los diputados los pone en las listas la dirección de su partido, que suele presidir el propio candidato."
+   },
+   {
+    "from": 9.86,
+    "to": 10.25,
+    "text": "O sea:"
+   },
+   {
+    "from": 10.55,
+    "to": 12.17,
+    "text": "el candidato elige a los suyos..."
+   },
+   {
+    "from": 12.39,
+    "to": 13.88,
+    "text": "y los suyos le eligen a él."
+   }
+  ]
+ },
+ "05-jueces": {
+  "dur": 11.58,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.77,
+    "text": "¿Y los jueces?"
+   },
+   {
+    "from": 1.07,
+    "to": 4.01,
+    "text": "A los veinte vocales que los gobiernan los eligen las Cortes:"
+   },
+   {
+    "from": 4.28,
+    "to": 6.32,
+    "text": "en dos mil veinticuatro,"
+   },
+   {
+    "from": 6.48,
+    "to": 7.37,
+    "text": "diez el PSOE y diez el PP."
+   },
+   {
+    "from": 7.67,
+    "to": 9.5,
+    "text": "El Constitucional y el Fiscal General..."
+   },
+   {
+    "from": 9.66,
+    "to": 11.48,
+    "text": "también salen de Cortes y Gobierno."
+   }
+  ]
+ },
+ "06-hilos": {
+  "dur": 3.33,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.61,
+    "text": "Todos los hilos acaban..."
+   },
+   {
+    "from": 1.81,
+    "to": 3.23,
+    "text": "en las mismas manos."
+   }
+  ]
+ },
+ "07-objecion": {
+  "dur": 9.42,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.16,
+    "text": "Quien lo defiende dice:"
+   },
+   {
+    "from": 1.44,
+    "to": 3.48,
+    "text": "hay elecciones limpias y libertades."
+   },
+   {
+    "from": 3.74,
+    "to": 4.57,
+    "text": "Nadie lo discute."
+   },
+   {
+    "from": 4.87,
+    "to": 6.75,
+    "text": "Pero la prueba no pregunta si votas."
+   },
+   {
+    "from": 7.05,
+    "to": 9.32,
+    "text": "Pregunta si los poderes están separados."
+   }
+  ]
+ },
+ "08-cierre": {
+  "dur": 6.64,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 0.86,
+    "text": "SUSPENSO."
+   },
+   {
+    "from": 1.16,
+    "to": 2.96,
+    "text": "¿Y quién escribió esa Constitución..."
+   },
+   {
+    "from": 3.21,
+    "to": 5.58,
+    "text": "y por qué la monarquía nunca se votó aparte?"
+   },
+   {
+    "from": 5.88,
+    "to": 6.54,
+    "text": "Parte dos."
+   }
+  ]
+ }
+}
