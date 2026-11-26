@@ -2,7 +2,7 @@
 
 Plantilla y kit para los reels y TikToks de LA ACCIÓN (laaccion.com), hechos con código (Remotion) y renderizados a MP4.
 
-Lee `CADENA.md` (del encargo al vídeo, paso a paso), `GUIA.md` (estilo, kit, efectos, voz, reglas y revisión) y `LINEA.md` (lo que defiende La Acción).
+¿Quieres encargar un vídeo? Empieza por `ENCARGO.md`. Después, `CADENA.md` (del encargo al vídeo, paso a paso), `GUIA.md` (estilo, kit, efectos, voz, reglas y revisión) y `LINEA.md` (lo que defiende La Acción).
 
 - `tools/` — `setup.sh` (sesión nueva), `alinea.py` y `corta.py` (voz → clips por escena), `final.sh` (audio a −14,3 LUFS), `sfx.py`, `voz.sh`.
 

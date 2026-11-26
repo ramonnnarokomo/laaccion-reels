@@ -1,6 +1,6 @@
 # Cadena completa: del encargo al vídeo listo para subir
 
-Esto es lo que hace Claude cuando Ramón (o Alberto, a través de Ramón) le pide «hoy quiero hacer el vídeo X». Primero lee `GUIA.md` (estilo, retención, kit, lecciones) y `LINEA.md` (lo que defiende La Acción). Esta hoja dice el orden.
+Esto es lo que hace el asistente (Claude en la cuenta de Ramón, o el de Alberto) cuando le piden «hoy quiero hacer el vídeo X». Si no eres Claude en la cuenta de Ramón, lee antes `ENCARGO.md`: el §3 (ElevenLabs en el PC de Ramón) no te sirve; usa el §3b. Primero lee `GUIA.md` (estilo, retención, kit, lecciones) y `LINEA.md` (lo que defiende La Acción). Esta hoja dice el orden.
 
 ## 0. Preparar la sesión (cada chat empieza con un contenedor limpio)
 
@@ -9,7 +9,7 @@ Límites de Ramón que no se tocan: no cambiar las versiones de Java, Node ni An
 
 1. Repo: `ramonnnarokomo/laaccion-reels` (añadirlo a la sesión con acceso de escritura, clonar y trabajar en el clon).
 2. `bash tools/setup.sh`: instala dependencias del repo (sin tocar versiones globales) y hace un fotograma de prueba.
-3. Comprobar el PC de Ramón: `get_device_info` y la pestaña de ElevenLabs en el navegador integrado (`tabs_context`; si no está, abrir `https://elevenlabs.io/app/speech-synthesis/text-to-speech`). Si el PC no responde, la app de Claude está cerrada o el PC apagado: decirlo y seguir con todo lo que no es la voz.
+3. (Solo Claude en la cuenta de Ramón) Comprobar su PC: `get_device_info` y la pestaña de ElevenLabs en el navegador integrado (`tabs_context`; si no está, abrir `https://elevenlabs.io/app/speech-synthesis/text-to-speech`). Si el PC no responde, la app de Claude está cerrada o el PC apagado: decirlo y seguir con todo lo que no es la voz.
 
 ## 1. Encargo
 
@@ -38,6 +38,15 @@ Voz «Ramón» (clon), modelo Eleven v4, idioma español. Reglas del texto: etiq
 6. Audio **sin procesar** (ni ecualizar, ni comprimir, ni normalizar la voz).
 
 Sin PC o sin sesión en ElevenLabs: se entrega `<slug>_voz_elevenlabs.txt` y se espera el mp3 adjunto en el chat (vale también desde el móvil) o en Drive.
+
+## 3b. Voz gratis: Chatterbox en Hugging Face (para quien no tiene el PC de Ramón)
+
+Solo con la muestra de Ramón (la adjunta quien encarga; **nunca** al repo), la de Alberto si él quiere, o sin muestra. Jamás una voz de alguien que no haya dado permiso.
+1. `pip install gradio_client`. Space: `ResembleAI/Chatterbox-Multilingual-TTS-es-es` (si no responde, `ResembleAI/Chatterbox-Multilingual-TTS`). Token en la variable `HF_TOKEN` si existe (más cuota gratis).
+2. `Client(space, hf_token=os.environ.get("HF_TOKEN")).view_api()` para ver el nombre del endpoint y sus parámetros (texto, audio de referencia, idioma `es`, exageración, cfg). No dar por hecho los nombres: leerlos.
+3. Texto sin etiquetas `[...]`, números en letra, en bloques de ≤ 280 caracteres cortados en final de frase. Un archivo por bloque; si un bloque falla por cuota, esperar y reintentar ese bloque, no todos.
+4. Unir los bloques con 0,25 s de silencio y pasar el resultado por `tools/voz.sh` (con Chatterbox sí se procesa; ver `GUIA.md`, «La voz»).
+5. Seguir en §4 con ese wav y el texto sin etiquetas.
 
 ## 4. Alineación y cortes
 
@@ -73,13 +82,14 @@ Muestreo de fotogramas del mp4 final (hoja de contacto de ~24) y comprobación d
 ## 8. Entrega
 
 - `<slug>.mp4`, `<slug>_portada.jpg`, `<slug>_texto-del-post.txt` (texto, fuentes, «Voz generada con IA a partir de la voz de Ramón», hashtags y, aparte, notas para quien sube: fecha límite, etiqueta de IA, subir desde la app).
-- Mandarlos al chat. Si hay carpeta de La Acción conectada en el PC, copiarlos también allí.
+- Mandarlos al chat. Si hay carpeta de La Acción conectada en el PC, copiarlos también allí. Si el asistente no puede mandar archivos al chat, rama `entrega/<slug>` (ver `ENCARGO.md`).
 - Publicar es cosa de Ramón o Alberto. Claude no publica ni entra en las cuentas de La Acción.
 
 ## 9. Mejorar siempre
 
 Al acabar cada vídeo:
 1. Lo aprendido (fallos de maquetación, lo que pidieron cambiar, lo que funcionó en visitas) se añade a `GUIA.md` (en «Lecciones de vídeos virales» o en la sección que toque), en una línea con fecha.
-2. Commit y push **solo a nombre de Ramón**, sin líneas Co-Authored-By ni Claude-Session:
+2. Commit y push a nombre de quien hizo el encargo, **sin líneas de coautoría de la IA** (ni Co-Authored-By ni Claude-Session ni equivalentes). Para Ramón:
    `git -c user.name="Ramón Ángel Nnar Okomo" -c user.email="ramonnnarokomo@users.noreply.github.com" commit -m "…"`
+   Si dos personas tocan el repo a la vez: `git pull --rebase` antes de empujar.
 3. Si cambia el procedimiento, se cambia esta hoja; la skill solo apunta aquí.
