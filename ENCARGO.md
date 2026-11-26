@@ -4,8 +4,11 @@ El entrenamiento está en este repo: `CADENA.md` (pasos), `GUIA.md` (estilo y le
 
 ## Puesta en marcha (una vez)
 
-1. **GitHub:** cuenta propia. Ramón te añade como colaborador del repo (Settings → Collaborators).
-2. **Asistente con terminal y acceso al repo.** El chat normal no basta: hace falta un entorno que clone el repo, instale Node y ejecute comandos.
+1. **GitHub:** cuenta propia. Dos formas:
+   - Ramón te añade como colaborador del repo (Settings → Collaborators) y aceptas la invitación del correo.
+   - O haces un *fork* del repo y tu asistente trabaja ahí. Para que lo aprendido llegue a `main`, abres un *pull request*.
+   Si con la invitación aceptada tu asistente sigue sin poder escribir, la app de GitHub de tu asistente tiene que tener acceso a este repo: te lo pide GitHub al conectarla.
+2. **Asistente con terminal y acceso al repo.** El chat normal no basta: hace falta un entorno que clone el repo, instale Node y ejecute comandos. Con el conector de GitHub del chat normal de ChatGPT solo se puede leer: ni renderiza ni hace push.
    - **ChatGPT → Codex (nube):** crear un entorno con este repo.
      - Script de configuración: `bash tools/setup.sh`.
      - Acceso a internet del agente limitado a: `huggingface.co`, `*.hf.space`, `pypi.org`, `files.pythonhosted.org`, `registry.npmjs.org` y las fuentes que haga falta consultar (`boe.es`, `ine.es`, `infoelectoral.interior.gob.es`…).

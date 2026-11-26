@@ -1,5 +1,7 @@
 # Cadena completa: del encargo al vídeo listo para subir
 
+> **¿No eres Claude en la cuenta de Ramón?** No tienes ni su PC ni su ElevenLabs, y no los necesitas. Para la voz, usa el §3b (Chatterbox) o entrega el texto para ElevenLabs y espera el mp3. Lo demás (guion, animación, render) lo haces tú en tu entorno. Lee antes `ENCARGO.md`.
+
 Esto es lo que hace el asistente (Claude en la cuenta de Ramón, o el de Alberto) cuando le piden «hoy quiero hacer el vídeo X». Si no eres Claude en la cuenta de Ramón, lee antes `ENCARGO.md`: el §3 (ElevenLabs en el PC de Ramón) no te sirve; usa el §3b. Primero lee `GUIA.md` (estilo, retención, kit, lecciones) y `LINEA.md` (lo que defiende La Acción). Esta hoja dice el orden.
 
 ## 0. Preparar la sesión (cada chat empieza con un contenedor limpio)
