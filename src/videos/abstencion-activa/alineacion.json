@@ -1,0 +1,237 @@
+{
+ "01-gancho": {
+  "dur": 6.36,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.64,
+    "text": "Hay dos formas de no votar."
+   },
+   {
+    "from": 1.94,
+    "to": 3.51,
+    "text": "Una le hace un favor al poder."
+   },
+   {
+    "from": 3.81,
+    "to": 6.26,
+    "text": "La otra le quita lo único que necesita."
+   }
+  ]
+ },
+ "02-dato": {
+  "dur": 6.59,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.49,
+    "text": "En dos mil veintitrés no votaron doce millones y medio de personas."
+   },
+   {
+    "from": 3.79,
+    "to": 4.75,
+    "text": "Uno de cada tres."
+   },
+   {
+    "from": 5.05,
+    "to": 6.49,
+    "text": "Y casi nadie supo por qué."
+   }
+  ]
+ },
+ "03-pasiva": {
+  "dur": 6.22,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.86,
+    "text": "Esa es la abstención por vaguería:"
+   },
+   {
+    "from": 2.16,
+    "to": 6.12,
+    "text": "te quedas en casa, no dices nada... y el lunes lo llaman pasotismo."
+   }
+  ]
+ },
+ "04-activa": {
+  "dur": 9.26,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.71,
+    "text": "La activa parte de una idea:"
+   },
+   {
+    "from": 1.93,
+    "to": 4.19,
+    "text": "votar una lista cerrada no es elegir."
+   },
+   {
+    "from": 4.43,
+    "to": 6.34,
+    "text": "Es FIRMAR a quien pone el partido."
+   },
+   {
+    "from": 6.64,
+    "to": 9.16,
+    "text": "Y nada obliga al diputado a cumplir lo que te prometió."
+   }
+  ]
+ },
+ "05-conciencia": {
+  "dur": 7.24,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.37,
+    "text": "Abstenerse a conciencia es no firmar."
+   },
+   {
+    "from": 2.67,
+    "to": 3.74,
+    "text": "Decirlo en voz alta."
+   },
+   {
+    "from": 4.01,
+    "to": 4.99,
+    "text": "Explicar por qué."
+   },
+   {
+    "from": 5.19,
+    "to": 7.14,
+    "text": "Y organizarse con los que piensan igual."
+   }
+  ]
+ },
+ "06-objeciones": {
+  "dur": 18.19,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.73,
+    "text": "«Si no votas, no te quejes.»"
+   },
+   {
+    "from": 2.03,
+    "to": 2.71,
+    "text": "Al revés:"
+   },
+   {
+    "from": 2.98,
+    "to": 5.87,
+    "text": "el que vota firma un cheque en blanco de cuatro años."
+   },
+   {
+    "from": 6.17,
+    "to": 8.16,
+    "text": "«Si no votas, ganan los peores.»"
+   },
+   {
+    "from": 8.46,
+    "to": 14.74,
+    "text": "En julio de mil novecientos treinta y dos votó el ochenta y cuatro por ciento de los alemanes... y los nazis salieron primeros."
+   },
+   {
+    "from": 15.03,
+    "to": 17.2,
+    "text": "La participación mide movilización,"
+   },
+   {
+    "from": 17.39,
+    "to": 18.09,
+    "text": "no libertad."
+   }
+  ]
+ },
+ "07-calle": {
+  "dur": 5.37,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 2.12,
+    "text": "Las ocho horas no salieron de una urna:"
+   },
+   {
+    "from": 2.35,
+    "to": 3.63,
+    "text": "las arrancó una huelga,"
+   },
+   {
+    "from": 3.79,
+    "to": 5.27,
+    "text": "en mil novecientos diecinueve."
+   }
+  ]
+ },
+ "08-boetie": {
+  "dur": 9.96,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 3.21,
+    "text": "Hace casi quinientos años, La Boétie lo dejó escrito:"
+   },
+   {
+    "from": 3.51,
+    "to": 5.28,
+    "text": "«decidíos a no servir más..."
+   },
+   {
+    "from": 5.62,
+    "to": 6.57,
+    "text": "y seréis libres»."
+   },
+   {
+    "from": 6.87,
+    "to": 8.53,
+    "text": "Lo único que el poder necesita..."
+   },
+   {
+    "from": 8.79,
+    "to": 9.86,
+    "text": "es tu consentimiento."
+   }
+  ]
+ },
+ "09-cierre": {
+  "dur": 9.43,
+  "subs": [
+   {
+    "from": 0.06,
+    "to": 1.26,
+    "text": "Así que no seas vago."
+   },
+   {
+    "from": 1.56,
+    "to": 3.33,
+    "text": "Quedarse en casa no es abstenerse:"
+   },
+   {
+    "from": 3.61,
+    "to": 4.52,
+    "text": "es rendirse."
+   },
+   {
+    "from": 4.82,
+    "to": 6.01,
+    "text": "Abstente con dignidad,"
+   },
+   {
+    "from": 6.26,
+    "to": 6.69,
+    "text": "dilo..."
+   },
+   {
+    "from": 7.01,
+    "to": 7.98,
+    "text": "y únete a La Acción."
+   },
+   {
+    "from": 8.28,
+    "to": 9.33,
+    "text": "La acción punto com."
+   }
+  ]
+ }
+}

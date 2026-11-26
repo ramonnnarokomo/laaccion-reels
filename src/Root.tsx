@@ -14,6 +14,9 @@ import {TOTAL as C2} from './videos/espana-no-tiene-constitucion/parte2/timeline
 import {Reel as Constitucion3} from './videos/espana-no-tiene-constitucion/parte3/Reel';
 import {TOTAL as C3} from './videos/espana-no-tiene-constitucion/parte3/timeline';
 import {Portada as PortadaConstitucion} from './videos/espana-no-tiene-constitucion/Portada';
+import {Reel as Abstencion} from './videos/abstencion-activa/Reel';
+import {TOTAL as AB} from './videos/abstencion-activa/timeline';
+import {Portada as PortadaAbstencion} from './videos/abstencion-activa/Portada';
 
 // Cada vídeo nuevo: una carpeta en src/videos/<slug>/ y una línea aquí.
 export const Root: React.FC = () => (
@@ -27,6 +30,8 @@ export const Root: React.FC = () => (
     {[1, 2, 3].map((p) => (
       <Composition key={p} id={`portada-constitucion-${p}`} component={PortadaConstitucion} defaultProps={{parte: p as 1 | 2 | 3}} durationInFrames={60} fps={FPS} width={1080} height={1920} />
     ))}
+    <Composition id="abstencion-activa" component={Abstencion} durationInFrames={AB} fps={FPS} width={1080} height={1920} />
+    <Composition id="portada-abstencion" component={PortadaAbstencion} durationInFrames={60} fps={FPS} width={1080} height={1920} />
     <Composition id="demo-real" component={DemoReal} durationInFrames={DEMO_TOTAL} fps={FPS} width={1080} height={1920} />
   </>
 );
