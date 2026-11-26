@@ -438,7 +438,8 @@ export const Pop: React.FC<{at: number; x: number; y: number; children: React.Re
 // ---------- Subtítulos arriba ----------
 // Líneas cortas que se sustituyen. Palabra a palabra; lo dicho en piedra; la clave en burdeos con caja de selección.
 // Token «116|ciento-dieciséis»: se muestra 116 y pesa como «ciento dieciséis».
-export type Linea = {from: number; to: number; words: Array<{w: string; t: number; em: boolean}>};
+// grande: la frase de gancho (más grande y entera en pantalla); br: la palabra empieza línea nueva.
+export type Linea = {from: number; to: number; grande?: boolean; words: Array<{w: string; t: number; em: boolean; br?: boolean}>};
 
 const silabas = (s: string) => {
   const t = s.toLowerCase().replace(/[^a-záéíóúüñ ]/g, ' ');
@@ -450,7 +451,7 @@ const silabas = (s: string) => {
   return c;
 };
 
-export const construyeLineas = (from: number, to: number, spec: string): Linea[] => {
+export const construyeLineas = (from: number, to: number, spec: string, bloque = false): Linea[] => {
   const lines = spec.split('/').map((l) => l.trim());
   type T = {w: string; em: boolean; peso: number; line: number};
   const toks: T[] = [];
@@ -482,6 +483,9 @@ export const construyeLineas = (from: number, to: number, spec: string): Linea[]
     acc += t.peso;
     return {...t, t: tt};
   });
+  if (bloque) {
+    return [{from: timed[0].t, to: 0, grande: true, words: timed.map((t, i) => ({w: t.w, t: t.t, em: t.em, br: i > 0 && t.line !== timed[i - 1].line}))}];
+  }
   return lines.map((_, li) => {
     const ws = timed.filter((t) => t.line === li);
     return {from: ws[0].t, to: 0, words: ws.map((w) => ({w: w.w, t: w.t, em: w.em}))};
@@ -497,7 +501,7 @@ export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lin
   const grupos: Array<{em: boolean; ws: typeof cur.words}> = [];
   cur.words.forEach((w) => {
     const g = grupos[grupos.length - 1];
-    if (g && g.em === w.em && w.em) g.ws.push(w);
+    if (g && g.em === w.em && w.em && !w.br) g.ws.push(w);
     else grupos.push({em: w.em, ws: [w]});
   });
   const last = cur.words.filter((w) => f >= w.t).slice(-1)[0];
@@ -522,17 +526,30 @@ export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lin
         textAlign: 'center',
         fontFamily: SANS,
         fontWeight: 700,
-        fontSize: 60,
+        fontSize: cur.grande ? 74 : 60,
         lineHeight: 1.15,
         opacity: out,
       }}
     >
       {grupos.map((g, gi) => {
-        if (!g.em) return <React.Fragment key={gi}>{g.ws.map(word)}</React.Fragment>;
+        const salto = g.ws[0].br ? <br /> : null;
+        if (!g.em)
+          return (
+            <React.Fragment key={gi}>
+              {g.ws.map((w, i) => (
+                <React.Fragment key={i}>
+                  {w.br && <br />}
+                  {word(w, i)}
+                </React.Fragment>
+              ))}
+            </React.Fragment>
+          );
         const shown = f >= g.ws[0].t;
         const bo = interpolate(f - g.ws[g.ws.length - 1].t, [2, 6], [0, 1], clamp);
         return (
-          <span key={gi} style={{position: 'relative', display: 'inline-block', marginRight: '0.24em', padding: '0 0.12em'}}>
+          <React.Fragment key={gi}>
+          {salto}
+          <span style={{position: 'relative', display: 'inline-block', marginRight: '0.24em', padding: '0 0.12em'}}>
             {g.ws.map((w, i) => (
               <React.Fragment key={i}>{word(w, i)}</React.Fragment>
             ))}
@@ -549,6 +566,7 @@ export const SubtitulosArriba: React.FC<{lineas: Linea[]; top?: number}> = ({lin
               </span>
             )}
           </span>
+          </React.Fragment>
         );
       })}
     </div>

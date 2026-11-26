@@ -44,6 +44,7 @@ Imagen:
 - **Cámara**: planos largos con movimiento suave (acercamientos, de un personaje a dos). Escena nueva cada ~4 s y cambio dentro de la escena cada 1–2 s. Sin cortes secos: fundido de ~80 ms justo al empezar la frase.
 - **Luz**: halo cálido detrás de lo importante y viñeta. En el papel, halo dorado muy suave o sombra.
 - **Subtítulos arriba**, a ~19 % de la altura. Una línea corta de 2–5 palabras que aparece palabra a palabra con un leve desenfoque. Lo ya dicho va en gris y la palabra clave en caja de selección (borde con puntitos en las esquinas). El centro y la parte de abajo quedan para la escena y lejos de los botones de TikTok.
+- **La frase de gancho** (la primera del vídeo) sale entera en un bloque, un 20 % más grande (74 px), y se queda en pantalla toda la frase y hasta que empieza la siguiente; el resto, línea a línea a 60 px. Lo hace solo `armaTimeline` (`src/kit/timeline.ts`). Lo pidió Ramón el 26/11/2026 para que el gancho llame más la atención.
 - **Marca pequeña** arriba a la izquierda. En vídeos largos, barra de capítulos arriba.
 
 Sonido: voz mono a unos −18 LUFS, **sin música** (en las pausas hay silencio) y efectos en las apariciones. Las pausas ocupan ~22 % del tiempo: no se pega todo.
